@@ -18,15 +18,15 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon//favicon-32x32.png"
+      href="./images/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./images/favicon//favicon-16x16.png"
+      href="./images/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./images/favicon//site.webmanifest" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
     <link
       rel="mask-icon"
       href="./images/favicon/safari-pinned-tab.svg"
@@ -56,7 +56,14 @@
         <div class="page-header__upper-part">
           <div class="page-header__left-part">
             <a class="phone" href="tel:+919986546583" title="Make a call"
-              >+91998 654 6583</a
+              ><svg class="phone-icon">
+                <use
+                  href="./images/icons.svg#icon-phone"
+                  width="30"
+                  height="30"
+                />
+              </svg>
+              <span>+91998 654 6583</span></a
             >
             <p class="welcome">Welcome you Benco store!</p>
           </div>
@@ -81,19 +88,16 @@
                 >
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="./about-us.html">About Us</a>
+                <a class="navigation__link" href="#about-us">About Us</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="./products.html">Products</a>
+                <a class="navigation__link" href="#products">Products</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#blog">Blog</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#reviews">Reviews</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="./delivery.html">Delivery</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#contact">Contact Us</a>
@@ -109,7 +113,7 @@
             <button class="page-header__search-btn" type="button">
               <svg class="page-header__search-icon">
                 <use
-                  href="./images/symbol-defs.svg#icon-search"
+                  href="./images/icons.svg#icon-search"
                   width="40"
                   height="40"
                 />
@@ -119,7 +123,7 @@
           <button class="page-header__basket-btn" type="button">
             <svg class="page-header__basket-icon">
               <use
-                href="./images/symbol-defs.svg#icon-shopping-cart"
+                href="./images/icons.svg#icon-shopping-cart"
                 width="40"
                 height="40"
               />
@@ -139,11 +143,37 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
-          <button type="button">Shop Now</button>
-          <div class="accent"><p>Furniture</p></div>
+          <button class="btn" type="button">Shop Now</button>
+          <div class="hero_decor hero_decor--up">
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+          </div>
+          <div class="hero_decor hero_decor--down">
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+            <div class="hero_circle"></div>
+          </div>
+          <div class="hero_left-wide-line"></div>
+          <div class="hero_left-thin-line"></div>
+          <div class="hero_down-small-line"></div>
+          <div class="hero_down-medium-line"></div>
+          <div class="hero_down-big-line"></div>
         </div>
       </section>
-      <section>
+      <section id="about-us">
         <div class="container">
           <h2>about us</h2>
           <h3>furniture of art</h3>
@@ -155,7 +185,7 @@
           <button type="button">Read More</button>
         </div>
       </section>
-      <section>
+      <section id="products">
         <div class="container">
           <h2>WHAT PRODUCT WE SELL</h2>
           <p>
