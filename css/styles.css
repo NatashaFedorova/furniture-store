@@ -227,7 +227,7 @@ ol {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -313,6 +313,8 @@ body {
 }
 
 .section-title {
+  position: relative;
+  margin-bottom: 32px;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 600;
@@ -677,16 +679,11 @@ body {
   background-position: top 16px left 70px, top 147px right 12px;
 }
 
-.about-us__title {
-  position: relative;
-  margin-bottom: 20px;
-}
-
 .about-us__title::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -10px;
+  left: 0px;
   width: 170px;
   height: 2px;
   background-color: #cda861;
@@ -705,4 +702,108 @@ body {
   margin-bottom: 24px;
   width: 513px;
   font-weight: 500;
+}
+
+/* ------------------ products --------------- */
+
+.products__title {
+  text-align: center;
+}
+
+.products__title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 410px;
+  height: 2px;
+  background-color: #cda861;
+}
+
+.products__text {
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.products__slider {
+  display: flex;
+  align-items: center;
+}
+
+.products__slider-btn {
+}
+
+.products__list {
+  display: flex;
+  gap: 59px;
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+.products__item {
+  /* ---------------------------*/
+  width: 257px;
+  /* --------------------------- */
+
+  position: relative;
+  padding-top: 38px;
+}
+
+.products__img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 131px;
+  max-height: 109px;
+}
+
+.products__text-wrapper {
+  display: flex;
+  align-items: end;
+  padding: 0 48px 18px 48px;
+  margin-bottom: 20px;
+  height: 149px;
+  border-radius: 30px;
+  background-color: #f2f1f1;
+}
+.products__name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.products__rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 17px;
+}
+
+.products__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 19px;
+}
+
+.products__price {
+  margin-bottom: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+}
+
+.products__about-product {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: rgba(52, 56, 61, 0.8);
 }

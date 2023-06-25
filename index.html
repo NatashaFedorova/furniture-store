@@ -189,30 +189,52 @@
           </div>
         </div>
       </section>
-      <section id="products">
+      <section class="products" id="products">
         <div class="container">
-          <h2 class="section-title">WHAT PRODUCT WE SELL</h2>
-          <p>
+          <h2 class="section-title products__title">WHAT PRODUCT WE SELL</h2>
+          <p class="products__text">
             Find our best products faster, better and qualitier product&#36;s
             choices from us.
           </p>
-          <ul>
-            <li>
-              <a href=""
-                ><img
-                  src="./images/chair.png"
-                  alt="chair"
-                  width="131"
-                  height="109"
-                />
-              </a>
-              <h3>Couch Cartoon</h3>
-              <p>*****</p>
-              <p>&#36; 159</p>
-              <p>Lorem Iipsum is simple and dumy text.</p>
-              <button type="button">Add to Cart</button>
-            </li>
-          </ul>
+          <div class="products__slider">
+            <button class="products__slider-btn" type="button">&lt;</button>
+            <ul class="products__list">
+              <li class="products__item">
+                <div class="products__img-wrapper">
+                  <img
+                    class="products__img"
+                    src="./images/couch-cartoon-min.png"
+                    alt="blue couch"
+                    width="79"
+                    height="109"
+                  />
+                </div>
+                <div class="products__text-wrapper">
+                  <h3 class="products__name">Couch Cartoon</h3>
+                </div>
+                <div class="products__rating">
+                  <svg class="products__icon" width="20" height="19">
+                    <use href="./images/icons.svg#icon-star-yellow"></use>
+                  </svg>
+                  <svg class="products__icon" width="20" height="19">
+                    <use href="./images/icons.svg#icon-star-yellow"></use>
+                  </svg>
+                  <svg class="products__icon" width="20" height="19">
+                    <use href="./images/icons.svg#icon-star-yellow"></use>
+                  </svg>
+                  <svg class="products__icon" width="20" height="19">
+                    <use href="./images/icons.svg#icon-star-yellow-white"></use>
+                  </svg>
+                </div>
+                <p class="products__price">&#36; 159</p>
+                <p class="products__about-product">
+                  Lorem Iipsum is simple and dumy text.
+                </p>
+                <button type="button">Add to Cart</button>
+              </li>
+            </ul>
+            <button class="products__slider-btn" type="button">&gt;</button>
+          </div>
         </div>
       </section>
       <section id="sale">
