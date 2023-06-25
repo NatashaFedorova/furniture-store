@@ -225,11 +225,11 @@ ol {
   list-style: none;
 }
 
-/* img {
+img {
   display: block;
   width: 100%;
   height: auto;
-} */
+}
 
 a {
   text-decoration: none;
@@ -263,13 +263,13 @@ body {
   font-size: 22px;
   line-height: 1.23;
 
-  cursor: url(../images/cursor.png), auto;
+  /* cursor: url(../images/cursor.png), auto; */
 }
 
 /* ------------- base style -------------- */
 .container {
   width: 1820px;
-  padding: 0 20px;
+  padding: 0 70px;
   margin: 0 auto;
 }
 
@@ -310,6 +310,13 @@ body {
 .btn:focus {
   color: #cda861;
   background-color: #34383d;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* ------------- header -------------- */
@@ -647,4 +654,55 @@ body {
   border-radius: 37px;
   background: linear-gradient(rgba(94, 87, 73, 0.2), rgba(159, 155, 137, 0.2));
   transform: rotate(-45deg);
+}
+
+/* ------------------ about-us --------------- */
+.about-us > .container {
+  padding: 80px 110px 80px 110px;
+  background-image: url(../images/bg-decor-img-about-us.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 17px;
+}
+
+.about-us__background {
+  border-radius: 50px;
+  background-color: rgba(205, 168, 97, 0.1);
+}
+
+.about-us__content {
+  padding: 74px 285px 79px 802px;
+  background-image: url(../images/home-img-about-us.png),
+    url(../images/chair-img-about-us.png);
+  background-repeat: no-repeat;
+  background-position: top 16px left 70px, top 147px right 12px;
+}
+
+.about-us__title {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.about-us__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 170px;
+  height: 2px;
+  background-color: #cda861;
+}
+
+.about-us__after-title {
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 76px;
+  font-weight: 600;
+  width: 461px;
+  text-transform: uppercase;
+}
+
+.about-us__text {
+  margin-bottom: 24px;
+  width: 513px;
+  font-weight: 500;
 }
