@@ -121,12 +121,8 @@
             </button>
           </form>
           <button class="page-header__basket-btn" type="button">
-            <svg class="page-header__basket-icon">
-              <use
-                href="./images/icons.svg#icon-shopping-cart"
-                width="40"
-                height="40"
-              />
+            <svg class="page-header__basket-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-shopping-cart" />
             </svg>
           </button>
         </div>
@@ -197,8 +193,8 @@
             choices from us.
           </p>
           <div class="products__slider">
-            <button class="products__slider-btn" type="button">
-              <svg class="products__icon" width="8" height="12">
+            <button class="products__slider-btn slider-btn" type="button">
+              <svg class="slider-btn-icon" width="12" height="15">
                 <use href="./images/icons.svg#icon-vector-left"></use>
               </svg>
             </button>
@@ -376,8 +372,8 @@
                 </button>
               </li>
             </ul>
-            <button class="products__slider-btn" type="button">
-              <svg class="products__icon" width="8" height="12">
+            <button class="products__slider-btn slider-btn" type="button">
+              <svg class="slider-btn-icon" width="12" height="15">
                 <use href="./images/icons.svg#icon-vector-right"></use>
               </svg>
             </button>
@@ -412,32 +408,201 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <h2>OUR STAR PRODUCTS</h2>
-          <p>
+      <section class="star-products">
+        <div class="star-products__container container">
+          <h2 class="star-products__title section-title">OUR STAR PRODUCTS</h2>
+          <p class="star-products__text">
             Discover all our beautiful and unique products which are perfect for
             your home.
           </p>
-          <ul>
-            <li><button type="button">FEATURE</button></li>
-            <li><button type="button">LATEST</button></li>
-            <li><button type="button">SELLER</button></li>
-          </ul>
-          <ul>
-            <li>
-              <img
-                src="./images/chair.png"
-                alt="chair"
-                width="204"
-                height="270"
-              />
-              <h3>Modern Chair</h3>
-              <p>4.7</p>
-              <button type="button">buy</button>
-              <p>&#36;99.99</p>
+          <ul class="star-products__filter">
+            <li class="star-products__filter-item">
+              <button
+                class="star-products__filter-btn star-products__filter-btn--active"
+                type="button"
+              >
+                <div class="filter-btn-circle">
+                  <span class="star-products__filter-type">Rating</span>
+                </div>
+              </button>
+            </li>
+            <li class="star-products__filter-item">
+              <button class="star-products__filter-btn" type="button">
+                <div class="filter-btn-circle">
+                  <span class="star-products__filter-type">Last</span>
+                </div>
+              </button>
+            </li>
+            <li class="star-products__filter-item">
+              <button class="star-products__filter-btn" type="button">
+                <div class="filter-btn-circle">
+                  <span class="star-products__filter-type">Discount</span>
+                </div>
+              </button>
             </li>
           </ul>
+          <div class="star-products__slider">
+            <button class="star-products__slider-btn slider-btn" type="button">
+              <svg class="slider-btn-icon" width="12" height="15">
+                <use href="./images/icons.svg#icon-vector-left"></use>
+              </svg>
+            </button>
+            <ul class="star-products__list">
+              <li class="star-products__item">
+                <div class="star-products__img-wrapper">
+                  <img
+                    src="./images/modern-chair-min.png"
+                    alt="chair"
+                    width="204"
+                    height="270"
+                  />
+                </div>
+                <div class="star-products__path-content-wrapper">
+                  <div class="star-products__title-rating-wrapper">
+                    <h3 class="star-products__title-card">Modern Chair</h3>
+                    <p class="star-products__rating">
+                      <svg
+                        class="star-products__rating-icon"
+                        width="23"
+                        height="23"
+                      >
+                        <use
+                          href="./images/icons.svg#icon-star-dark-border"
+                        ></use>
+                      </svg>
+                      4.7
+                    </p>
+                  </div>
+                  <button class="star-products__btn-cart" type="button">
+                    <svg
+                      class="star-products__btn-cart-icon"
+                      width="25"
+                      height="25"
+                    >
+                      <use href="./images/icons.svg#icon-shopping-cart" />
+                    </svg>
+                  </button>
+                </div>
+                <p class="star-products__price">&#36;99.99</p>
+              </li>
+              <li class="star-products__item">
+                <div class="star-products__img-wrapper">
+                  <img
+                    src="./images/antique-chair-min.png"
+                    alt="chair"
+                    width="203"
+                    height="155"
+                  />
+                </div>
+                <div class="star-products__path-content-wrapper">
+                  <div class="star-products__title-rating-wrapper">
+                    <h3 class="star-products__title-card">Antique Chair</h3>
+                    <p class="star-products__rating">
+                      <svg
+                        class="star-products__rating-icon"
+                        width="23"
+                        height="23"
+                      >
+                        <use
+                          href="./images/icons.svg#icon-star-dark-border"
+                        ></use>
+                      </svg>
+                      4.5
+                    </p>
+                  </div>
+                  <button class="star-products__btn-cart" type="button">
+                    <svg
+                      class="star-products__btn-cart-icon"
+                      width="25"
+                      height="25"
+                    >
+                      <use href="./images/icons.svg#icon-shopping-cart" />
+                    </svg>
+                  </button>
+                </div>
+                <p class="star-products__price">&#36;299.99</p>
+              </li>
+              <li class="star-products__item">
+                <div class="star-products__img-wrapper">
+                  <img
+                    src="./images/magazine-holder-min.png"
+                    alt="Magazine Holder"
+                    width="176"
+                    height="176"
+                  />
+                </div>
+                <div class="star-products__path-content-wrapper">
+                  <div class="star-products__title-rating-wrapper">
+                    <h3 class="star-products__title-card">Magazine Holder</h3>
+                    <p class="star-products__rating">
+                      <svg
+                        class="star-products__rating-icon"
+                        width="23"
+                        height="23"
+                      >
+                        <use
+                          href="./images/icons.svg#icon-star-dark-border"
+                        ></use>
+                      </svg>
+                      5.0
+                    </p>
+                  </div>
+                  <button class="star-products__btn-cart" type="button">
+                    <svg
+                      class="star-products__btn-cart-icon"
+                      width="25"
+                      height="25"
+                    >
+                      <use href="./images/icons.svg#icon-shopping-cart" />
+                    </svg>
+                  </button>
+                </div>
+                <p class="star-products__price">&#36;149.99</p>
+              </li>
+              <li class="star-products__item">
+                <div class="star-products__img-wrapper">
+                  <img
+                    src="./images/comfort-chair-min.png"
+                    alt="chair"
+                    width="193"
+                    height="193"
+                  />
+                </div>
+                <div class="star-products__path-content-wrapper">
+                  <div class="star-products__title-rating-wrapper">
+                    <h3 class="star-products__title-card">Comfort Chair</h3>
+                    <p class="star-products__rating">
+                      <svg
+                        class="star-products__rating-icon"
+                        width="23"
+                        height="23"
+                      >
+                        <use
+                          href="./images/icons.svg#icon-star-dark-border"
+                        ></use>
+                      </svg>
+                      3.5
+                    </p>
+                  </div>
+                  <button class="star-products__btn-cart" type="button">
+                    <svg
+                      class="star-products__btn-cart-icon"
+                      width="25"
+                      height="25"
+                    >
+                      <use href="./images/icons.svg#icon-shopping-cart" />
+                    </svg>
+                  </button>
+                </div>
+                <p class="star-products__price">&#36;599.99</p>
+              </li>
+            </ul>
+            <button class="star-products__slider-btn slider-btn" type="button">
+              <svg class="slider-btn-icon" width="12" height="15">
+                <use href="./images/icons.svg#icon-vector-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section>
