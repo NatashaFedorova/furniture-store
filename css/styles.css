@@ -953,6 +953,9 @@ body {
 .star-products__container {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-image: url(../images/decor-img-star-products-min.png);
+  background-repeat: no-repeat;
+  background-position: top 150px right -32px;
 }
 
 .star-products__title {
@@ -1133,4 +1136,28 @@ body {
   font-size: 30px;
   font-weight: 500;
   text-align: center;
+}
+
+/* ------------ advantages ------------ */
+.advantages__container {
+  position: relative;
+  padding-top: 460px;
+  padding-bottom: 80px;
+}
+
+.advantages__centre-decor {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 956px;
+  height: 415px;
+  background: url(../images/sofa-min.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages__list {
+  padding: 121px 324px;
+  border-radius: 30px;
+  background: rgba(205, 168, 97, 0.19);
 }
