@@ -296,6 +296,7 @@ body {
 }
 
 .btn {
+  display: block;
   min-width: 220px;
   height: 60px;
   font-family: 'Montserrat', sans-serif;
@@ -524,7 +525,7 @@ body {
   );
 }
 
-.hero .container {
+.hero__container {
   position: relative;
   padding-top: 345px;
   padding-bottom: 228px;
@@ -607,7 +608,7 @@ body {
 
 .hero_left-wide-line {
   position: absolute;
-  left: -268px;
+  left: -232px;
   top: 370px;
   width: 342px;
   height: 65px;
@@ -618,7 +619,7 @@ body {
 
 .hero_left-thin-line {
   position: absolute;
-  left: -187px;
+  left: -149px;
   top: 403px;
   width: 273px;
   height: 18px;
@@ -664,7 +665,7 @@ body {
 }
 
 /* ------------------ about-us --------------- */
-.about-us > .container {
+.about-us__container {
   padding: 80px 110px 80px 110px;
   background-image: url(../images/bg-decor-img-about-us.svg);
   background-repeat: no-repeat;
@@ -710,7 +711,7 @@ body {
 }
 
 /* ------------------ products --------------- */
-.products > .container {
+.products__container {
   background-image: url(../images/decor-img-products.png);
   background-repeat: no-repeat;
   background-position: top 94px right -35px;
@@ -749,6 +750,23 @@ body {
   height: 47px;
   border-radius: 50%;
   background-color: #cda861;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products__slider-btn:hover,
+.products__slider-btn:focus {
+  background-color: #34383d;
+}
+
+.products__icon {
+  fill: #34383d;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products__slider-btn:hover .products__icon,
+.products__slider-btn:focus .products__icon {
+  fill: #cda861;
 }
 
 .products__list {
@@ -854,4 +872,79 @@ body {
 .products__item:hover .products__btn-add-to-cart,
 .products__item:focus .products__btn-add-to-cart {
   background-color: #cda861;
+}
+
+/* ------------------ sale --------------- */
+.sale__container {
+  padding: 80px 150px;
+  background-image: url(../images/decor-img-sale-2-min.png),
+    url(../images/decor-img-sale-1-min.png);
+  background-repeat: no-repeat;
+  background-position: left -39px bottom 10px, right 44px top 32px;
+}
+
+.sale__content {
+  padding-top: 60px;
+  width: 1520px;
+  height: 767px;
+  border-radius: 50px;
+  border: 5px solid #aacacd;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.05) 0.01%
+    ),
+    url(../images/bg-img-sale-min.png),
+    lightgray 1.6px -106.427px / 100% 146.938% no-repeat;
+}
+
+.sale__title {
+  margin-bottom: 34px;
+  color: #000000;
+  text-align: center;
+}
+.sale__timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 34px;
+  gap: 71px;
+}
+
+.sale__days,
+.sale__hours,
+.sale__minutes,
+.sale__seconds {
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sale__timer-value {
+  margin-bottom: 3px;
+  width: 66px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #f3e9e9;
+  font-size: 24px;
+}
+
+.sale__timer-text {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+.sale__btn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
 }
