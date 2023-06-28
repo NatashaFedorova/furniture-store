@@ -10,8 +10,10 @@ It is necessary to do:
 
 1. Download pictures 1x, 2x and optimize
 2. Export the extra pictures from the sprite and picture folder
-3. Sequence of writing styles - according to requirements
-4. Timer
+3. Multiple files for styles
+4. Sequence of writing styles - according to requirements
+5. Timer
+6. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
 
 Additionally
 
@@ -19,3 +21,4 @@ Additionally
 2. Script for "My Account"
 3. Sliders
 4. A modal window as a reaction to a subscription
+5. Animation for yellow stars
