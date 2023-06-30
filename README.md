@@ -15,6 +15,7 @@ It is necessary to do:
 5. Timer
 6. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
 7. The rating should be in the form of a list
+8. Logo is picture
 
 Additionally
 
