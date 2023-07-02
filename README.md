@@ -11,11 +11,11 @@ It is necessary to do:
 1. Download pictures 1x, 2x and optimize
 2. Export the extra pictures from the sprite and picture folder
 3. Multiple files for styles
-4. Sequence of writing styles - according to requirements
-5. Timer
-6. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
-7. The rating should be in the form of a list
-8. Logo is picture
+4. Timer
+5. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
+6. The rating should be in the form of a list
+7. Logo is picture
+8. Preloader
 
 Additionally
 
