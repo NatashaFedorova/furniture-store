@@ -350,6 +350,16 @@ body {
   text-transform: uppercase;
 }
 
+.decor-title-element::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #cda861;
+}
+
 /* ------------- header -------------- */
 .page-header {
   position: absolute;
@@ -711,14 +721,10 @@ body {
   text-align: left;
 }
 
-.about-us__title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0px;
+.about-us__title.decor-title-element::after {
+  left: 0;
+  transform: translateX(0);
   width: 170px;
-  height: 2px;
-  background-color: #cda861;
 }
 
 .about-us__after-title {
@@ -743,15 +749,11 @@ body {
   background-position: top 94px right -35px;
 }
 
-.products__title::after {
-  content: '';
+.products__title.decor-title-element::after {
   position: absolute;
-  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   width: 410px;
-  height: 2px;
-  background-color: #cda861;
 }
 
 .products__text {
@@ -954,15 +956,10 @@ body {
   background-position: top 150px right -32px;
 }
 
-.star-products__title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
+.star-products__title.decor-title-element::after {
   left: 50%;
   transform: translateX(-50%);
   width: 343px;
-  height: 2px;
-  background-color: #cda861;
 }
 
 .star-products__text {
@@ -1194,15 +1191,8 @@ body {
   background-position: top 92px right 70px, left -49px bottom 502px;
 }
 
-.blog__title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+.blog__title.decor-title-element::after {
   width: 430px;
-  height: 2px;
-  background-color: #cda861;
 }
 
 .blog__text {
@@ -1319,15 +1309,8 @@ body {
   margin-bottom: 42px;
 }
 
-.reviews__title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+.reviews__title.decor-title-element::after {
   width: 348px;
-  height: 2px;
-  background-color: #cda861;
 }
 
 .reviews__list {
@@ -1411,15 +1394,8 @@ body {
     bottom 516px right 631px;
 }
 
-.featured-products__title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+.featured-products__title.decor-title-element::after {
   width: 354px;
-  height: 2px;
-  background-color: #cda861;
 }
 
 .featured-products__text {
@@ -1527,14 +1503,10 @@ body {
   line-height: 1.2;
 }
 
-.subscription__title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
+.subscription__title.decor-title-element::after {
   left: 0;
+  transform: translateY(0);
   width: 610px;
-  height: 2px;
-  background-color: #cda861;
 }
 
 .subscription__text {
