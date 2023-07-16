@@ -849,24 +849,24 @@ body {
   z-index: 1;
   position: absolute;
   top: 0;
-  right: -107px;
+  right: -34px;
   display: flex;
-  width: 1442px;
+  width: 1278px;
   height: 1080px;
 }
 
 .hero__decorative-element-bg--lamp {
-  width: 276px;
+  width: 217px;
   animation: visibilityDecorativeElementLamp 500ms cubic-bezier(0.4, 0, 0.2, 1) 900ms forwards;
 }
 
 .hero__decorative-element-bg--sofa {
-  width: 928px;
+  width: 852px;
   animation: visibilityDecorativeElementSofa 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms forwards;
 }
 
 .hero__decorative-element-bg--plant {
-  width: 238px;
+  width: 209px;
   animation: visibilityDecorativeElementPlant 500ms cubic-bezier(0.4, 0, 0.2, 1) 400ms forwards;
 }
 
