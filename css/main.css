@@ -74,48 +74,46 @@ body {
     background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #34383d 100%);
   }
   10% {
-    background: linear-gradient(45deg, #34383d 0%, #96825e 10%, #cda861 15%, #f5daa7 17%, #cda861 20%, #96825e 25%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #34383d 100%);
+    background: linear-gradient(45deg, #34383d 0%, #46494d 10%, #697078 15%, #b6bbc1 17%, #697078 20%, #46494d 25%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #34383d 100%);
   }
   20% {
-    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #96825e 20%, #cda861 25%, #f5daa7 27%, #cda861 30%, #96825e 35%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #34383d 100%);
+    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #46494d 20%, #697078 25%, #b6bbc1 27%, #697078 30%, #46494d 35%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #34383d 100%);
   }
   30% {
-    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #96825e 30%, #cda861 35%, #f5daa7 37%, #cda861 40%, #96825e 45%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #34383d 100%);
+    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #46494d 30%, #697078 35%, #b6bbc1 37%, #697078 40%, #46494d 45%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #34383d 100%);
   }
   40% {
-    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #96825e 40%, #cda861 45%, #f5daa7 47%, #cda861 50%, #96825e 55%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #34383d 100%);
+    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #46494d 40%, #697078 45%, #b6bbc1 47%, #697078 50%, #46494d 55%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #34383d 100%);
   }
   50% {
-    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #96825e 50%, #cda861 55%, #f5daa7 57%, #cda861 60%, #96825e 65%, #34383d 70%, #34383d 80%, #34383d 90%, #34383d 100%);
+    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #46494d 50%, #697078 55%, #b6bbc1 57%, #697078 60%, #46494d 65%, #34383d 70%, #34383d 80%, #34383d 90%, #34383d 100%);
   }
   60% {
-    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #96825e 60%, #cda861 65%, #f5daa7 67%, #cda861 70%, #96825e 75%, #34383d 80%, #34383d 90%, #34383d 100%);
+    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #46494d 60%, #697078 65%, #b6bbc1 67%, #697078 70%, #46494d 75%, #34383d 80%, #34383d 90%, #34383d 100%);
   }
   70% {
-    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #96825e 70%, #cda861 75%, #f5daa7 77%, #cda861 80%, #96825e 85%, #34383d 90%, #34383d 100%);
+    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #46494d 70%, #697078 75%, #b6bbc1 77%, #697078 80%, #46494d 85%, #34383d 90%, #34383d 100%);
   }
   80% {
-    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #96825e 80%, #cda861 85%, #f5daa7 87%, #cda861 90%, #96825e 95%, #34383d 100%);
+    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #46494d 80%, #697078 85%, #b6bbc1 87%, #697078 90%, #46494d 95%, #34383d 100%);
   }
   90% {
-    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #96825e 90%, #cda861 95%, #f5daa7 97%, #cda861 100%);
+    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #46494d 90%, #697078 95%, #b6bbc1 97%, #697078 100%);
   }
   100% {
-    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #96825e 100%);
+    background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #55585c 100%);
   }
 }
 @keyframes visibilityDecorativeElementLamp {
   0% {
     background: url(../images/hero/lamp-min.png);
     background-repeat: no-repeat;
-    background-position: right 0px top 0;
     background-size: contain;
     transform: scale(1.2);
   }
   100% {
     background: url(../images/hero/lamp-min.png);
     background-repeat: no-repeat;
-    background-position: right -68px top 0;
     background-size: contain;
     transform: scale(1);
   }
@@ -124,14 +122,12 @@ body {
   from {
     background: url(../images/hero/sofa-min.png);
     background-repeat: no-repeat;
-    background-position: right 788px top 0;
     background-size: contain;
     transform: scale(1.2) translateX(27%);
   }
   to {
     background: url(../images/hero/sofa-min.png);
     background-repeat: no-repeat;
-    background-position: left 788px top 0;
     background-size: contain;
     transform: scale(1);
   }
@@ -140,15 +136,21 @@ body {
   from {
     background: url(../images/hero/plant-min.png);
     background-repeat: no-repeat;
-    background-position: left 578px top 0;
     background-size: contain;
     transform: scale(0.8) translateX(-5%);
   }
   to {
     background: url(../images/hero/plant-min.png);
     background-repeat: no-repeat;
-    background-position: left 578px top 0;
     background-size: contain;
+    transform: scale(1);
+  }
+}
+@keyframes lineVisibilityUnderTitle {
+  from {
+    transform: scale(0.3);
+  }
+  to {
     transform: scale(1);
   }
 }
@@ -189,6 +191,7 @@ body {
   transform: translateX(-50%);
   height: 2px;
   background-color: #cda861;
+  animation: lineVisibilityUnderTitle 600ms cubic-bezier(0.4, 0, 0.2, 1) 100ms forwards;
 }
 
 .logo {
@@ -842,27 +845,29 @@ body {
   background: linear-gradient(90deg, #d6cfc2 0%, rgba(255, 255, 255, 0.5) 60%, #d6cfc2 100%);
 }
 
-.hero__decorative-element-bg {
+.hero__animated-decorative-bg {
   z-index: 1;
   position: absolute;
-  display: block;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: transparent;
-}
-
-.hero__decorative-element-bg--sofa {
-  animation: visibilityDecorativeElementSofa 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms forwards;
+  right: -107px;
+  display: flex;
+  width: 1442px;
+  height: 1080px;
 }
 
 .hero__decorative-element-bg--lamp {
-  animation: visibilityDecorativeElementLamp 500ms cubic-bezier(0.4, 0, 0.2, 1) 600ms forwards;
+  width: 276px;
+  animation: visibilityDecorativeElementLamp 500ms cubic-bezier(0.4, 0, 0.2, 1) 900ms forwards;
+}
+
+.hero__decorative-element-bg--sofa {
+  width: 928px;
+  animation: visibilityDecorativeElementSofa 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms forwards;
 }
 
 .hero__decorative-element-bg--plant {
-  animation: visibilityDecorativeElementPlant 500ms cubic-bezier(0.4, 0, 0.2, 1) 1100ms forwards;
+  width: 238px;
+  animation: visibilityDecorativeElementPlant 500ms cubic-bezier(0.4, 0, 0.2, 1) 400ms forwards;
 }
 
 .hero__container {
@@ -898,6 +903,7 @@ body {
   width: 100%;
   height: 4px;
   background-color: #cda861;
+  animation: lineVisibilityUnderTitle 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms forwards;
 }
 
 .hero__text {
