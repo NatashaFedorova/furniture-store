@@ -208,7 +208,7 @@
     background-repeat: no-repeat;
     background-position: right 0px top 0;
     background-size: contain;
-    transform: scale(0.8);
+    transform: scale(1.2);
   }
 
   100% {
@@ -241,7 +241,7 @@
     background-repeat: no-repeat;
     background-position: left 578px top 0;
     background-size: contain;
-    transform: scale(0.8);
+    transform: scale(0.8) translateX(-5%);
   }
   to {
     background: url(../images/hero/plant-min.png);
