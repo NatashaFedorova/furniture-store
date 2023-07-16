@@ -1,0 +1,116 @@
+.page-footer__upper-part {
+  background-color: #cda861;
+}
+
+.page-footer__upper-part .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__logo {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.page-footer__text {
+  margin-bottom: 25px;
+  width: 607px;
+}
+
+.page-footer__social-network-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.page-footer__social-network-link {
+  display: block;
+}
+
+.page-footer__social-network-item {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  overflow: hidden;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-footer__social-network-item:hover,
+.page-footer__social-network-item:focus {
+  transform: scale(1.2);
+}
+
+.page-footer__navigation {
+  display: flex;
+  gap: 144px;
+}
+
+.page-footer__title {
+  position: relative;
+  margin-bottom: 32px;
+  font-family: Montserrat, sans-serif;
+  font-size: 26px;
+}
+
+.page-footer__title--support::after,
+.page-footer__title--quick-links::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.page-footer__title--quick-links::after {
+  width: 160px;
+}
+.page-footer__title--support::after {
+  width: 111px;
+}
+
+.page-footer__nav-list {
+  padding-left: 33px;
+  list-style: url(../images/decor-disc.svg);
+}
+
+.page-footer__nav-item::marker {
+  width: 4px;
+}
+
+.page-footer__nav-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.page-footer__nav-link {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #34383d;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-footer__nav-link:hover,
+.page-footer__nav-link:focus {
+  color: #ffffff;
+}
+
+.page-footer__lower-part {
+  background-color: #34383d;
+}
+
+.page-footer__lower-part .container {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.page-footer__license {
+  font-size: 18px;
+  color: #cda861;
+  text-align: center;
+}

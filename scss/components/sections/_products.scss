@@ -1,0 +1,128 @@
+.products__container {
+  background-image: url(../images/decor-img-products.png);
+  background-repeat: no-repeat;
+  background-position: top 94px right -35px;
+}
+
+.products__title.decor-title-element::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 410px;
+}
+
+.products__text {
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.products__slider {
+  display: flex;
+  align-items: center;
+}
+
+.products__list {
+  margin-left: 36px;
+  margin-right: 36px;
+  display: flex;
+  gap: 57px;
+}
+
+.products__item {
+  position: relative;
+  padding-top: 38px;
+  width: 257px;
+}
+
+.products__img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 131px;
+  max-height: 109px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products__text-wrapper {
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 149px;
+  background-color: #f2f1f1;
+  border-radius: 30px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.products__item:hover .products__text-wrapper,
+.products__item:focus .products__text-wrapper {
+  background-color: #cda861;
+}
+
+.products__name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.products__rating {
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.products__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 19px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products__item:hover .products__icon {
+  transform: scale(1.25);
+}
+
+.products__price {
+  margin-bottom: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+}
+
+.products__about-product {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: rgba(52, 56, 61, 0.8);
+}
+
+.products__btn-add-to-cart {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 199px;
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: transparent;
+  border: 2px solid #cda861;
+  border-radius: 50px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products__item:hover .products__btn-add-to-cart,
+.products__item:focus .products__btn-add-to-cart {
+  background-color: #cda861;
+}

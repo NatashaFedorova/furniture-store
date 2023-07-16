@@ -1,0 +1,44 @@
+.about-us__container {
+  padding: 80px 110px 80px 110px;
+  background-image: url(../images/bg-decor-img-about-us.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 17px;
+}
+
+.about-us__background {
+  background-color: rgba(205, 168, 97, 0.1);
+  border-radius: 50px;
+}
+
+.about-us__content {
+  padding: 74px 285px 79px 802px;
+  background-image: url(../images/home-img-about-us.png),
+    url(../images/chair-img-about-us.png);
+  background-repeat: no-repeat;
+  background-position: top 16px left 70px, top 147px right 12px;
+}
+
+.about-us__title {
+  text-align: left;
+}
+
+.about-us__title.decor-title-element::after {
+  left: 0;
+  transform: translateX(0);
+  width: 170px;
+}
+
+.about-us__after-title {
+  margin-bottom: 30px;
+  width: 461px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 76px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about-us__text {
+  margin-bottom: 24px;
+  width: 513px;
+  font-weight: 500;
+}

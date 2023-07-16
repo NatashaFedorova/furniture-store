@@ -1,0 +1,26 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/hidden';
+@import './utils/base/reset';
+@import './utils/base/common';
+@import './utils/base/animations';
+
+@import './components/elements/button';
+@import './components/elements/container';
+@import './components/elements/decorTitleElement';
+@import './components/elements/logo';
+@import './components/elements/sectionTitle';
+@import './components/elements/_sliderBtn';
+
+@import './components/sections/aboutUs';
+@import './components/sections/advantages';
+@import './components/sections/blog';
+@import './components/sections/featuredProducts';
+@import './components/sections/footer';
+@import './components/sections/header';
+@import './components/sections/hero';
+@import './components/sections/products';
+@import './components/sections/reviews';
+@import './components/sections/sale';
+@import './components/sections/starProducts';
+@import './components/sections/subscription';

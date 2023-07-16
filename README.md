@@ -15,7 +15,6 @@ It is necessary to do:
 5. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
 6. The rating should be in the form of a list
 7. Logo is picture
-8. Preloader
 
 Additionally
 

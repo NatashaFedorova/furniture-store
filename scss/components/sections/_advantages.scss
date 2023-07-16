@@ -1,0 +1,46 @@
+.advantages__container {
+  position: relative;
+  padding-top: 460px;
+  padding-bottom: 80px;
+  background: url(../images/decor-img-advantages-min.png);
+  background-repeat: no-repeat;
+  background-position: top 60px left -108px;
+}
+
+.advantages__centre-decor {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 956px;
+  height: 415px;
+  background: url(../images/sofa-min.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages__list {
+  padding: 121px 324px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 155px;
+  background-color: rgba(205, 168, 97, 0.19);
+  border-radius: 30px;
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #000;
+}
+
+.advantages__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.advantages__text {
+  font-size: 14px;
+}

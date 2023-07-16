@@ -1,0 +1,9 @@
+.decor-title-element::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #cda861;
+}

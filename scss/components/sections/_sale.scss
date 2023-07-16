@@ -1,0 +1,73 @@
+.sale__container {
+  padding: 80px 150px;
+  background-image: url(../images/decor-img-sale-2-min.png),
+    url(../images/decor-img-sale-1-min.png);
+  background-repeat: no-repeat;
+  background-position: left -39px bottom 10px, right 44px top 32px;
+}
+
+.sale__content {
+  padding-top: 60px;
+  width: 1520px;
+  height: 767px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.05) 0.01%
+    ),
+    url(../images/bg-img-sale-min.png),
+    lightgray 1.6px -106.427px / 100% 146.938% no-repeat;
+  border: 5px solid #aacacd;
+  border-radius: 50px;
+}
+
+.sale__title {
+  margin-bottom: 34px;
+  color: #000000;
+}
+
+.sale__timer {
+  margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 71px;
+}
+
+.sale__days,
+.sale__hours,
+.sale__minutes,
+.sale__seconds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+
+.sale__timer-value {
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  font-size: 24px;
+  border: 1px solid #f3e9e9;
+  border-radius: 50%;
+}
+
+.sale__timer-text {
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+}
+
+.sale__btn {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 50px;
+}
