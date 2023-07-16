@@ -202,6 +202,55 @@
     );
   }
 }
+@keyframes visibilityDecorativeElementLamp {
+  0% {
+    background: url(../images/hero/lamp-min.png);
+    background-repeat: no-repeat;
+    background-position: right 0px top 0;
+    background-size: contain;
+    transform: scale(0.8);
+  }
+
+  100% {
+    background: url(../images/hero/lamp-min.png);
+    background-repeat: no-repeat;
+    background-position: right -68px top 0;
+    background-size: contain;
+    transform: scale(1);
+  }
+}
+@keyframes visibilityDecorativeElementSofa {
+  from {
+    background: url(../images/hero/sofa-min.png);
+    background-repeat: no-repeat;
+    background-position: right 788px top 0;
+    background-size: contain;
+    transform: scale(1.2) translateX(27%);
+  }
+  to {
+    background: url(../images/hero/sofa-min.png);
+    background-repeat: no-repeat;
+    background-position: left 788px top 0;
+    background-size: contain;
+    transform: scale(1);
+  }
+}
+@keyframes visibilityDecorativeElementPlant {
+  from {
+    background: url(../images/hero/plant-min.png);
+    background-repeat: no-repeat;
+    background-position: left 578px top 0;
+    background-size: contain;
+    transform: scale(0.8);
+  }
+  to {
+    background: url(../images/hero/plant-min.png);
+    background-repeat: no-repeat;
+    background-position: left 578px top 0;
+    background-size: contain;
+    transform: scale(1);
+  }
+}
 
 h1,
 h2,
@@ -515,7 +564,7 @@ body {
 .page-header__search-form::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   right: 52px;
   width: 0px;
   height: 1px;
@@ -569,15 +618,42 @@ body {
   );
 }
 
+.hero__decorative-element-bg {
+  z-index: 1;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+}
+
+.hero__decorative-element-bg--sofa {
+  animation: visibilityDecorativeElementSofa 500ms cubic-bezier(0.4, 0, 0.2, 1)
+    100ms forwards;
+}
+
+.hero__decorative-element-bg--lamp {
+  animation: visibilityDecorativeElementLamp 500ms cubic-bezier(0.4, 0, 0.2, 1)
+    600ms forwards;
+}
+
+.hero__decorative-element-bg--plant {
+  animation: visibilityDecorativeElementPlant 500ms cubic-bezier(0.4, 0, 0.2, 1)
+    1100ms forwards;
+}
+
 .hero__container {
   position: relative;
   padding-top: 345px;
   padding-bottom: 228px;
-  background: url(../images/img-hero-1.png), url(../images/img-hero-2.png),
-    url(../images/img-hero-3.png);
+
+  background: url(../images/img-hero-2.png), url(../images/img-hero-3.png);
   background-repeat: no-repeat;
-  background-position: right center, right 14px top 262px, right center;
-  background-size: contain, auto, contain;
+  background-position: right 14px top 262px, right center;
+  background-size: auto, contain, contain;
+
   overflow: hidden;
 }
 
@@ -608,6 +684,11 @@ body {
 .hero__text {
   margin-bottom: 104px;
   width: 489px;
+}
+
+.hero__btn {
+  position: relative;
+  z-index: 2;
 }
 
 .hero_decor {
