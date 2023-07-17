@@ -2,14 +2,11 @@
   padding: 12px 35px 11px 35px;
   font-size: 40px;
   line-height: 1.18;
-  color: #ffffff;
-  background-color: #34383d;
+  color: var(--logo-color);
+  background-color: var(--logo-bg-color);
 
   &:hover,
   &:focus {
-    animation-name: changeColorLogo;
-    animation-duration: 500ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    animation-iteration-count: 2;
+    animation: changeColorLogo 500ms var(--transition-timing-function) 2;
   }
 }

@@ -1,4 +1,4 @@
-Furniture store
+Furniture store (HTML/CSS/SCSS)
 
 This pet project was implemented in order to consolidate knowledge from the HTML/CSS course. The width of the layout is 1920px, but it is set to 1820px.
 
@@ -10,11 +10,10 @@ It is necessary to do:
 
 1. Download pictures 1x, 2x and optimize
 2. Export the extra pictures from the sprite and picture folder
-3. Multiple files for styles
-4. Timer
-5. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
-6. The rating should be in the form of a list
-7. Logo is picture
+3. Timer
+4. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
+5. The rating should be in the form of a list
+6. Logo is picture
 
 Additionally
 

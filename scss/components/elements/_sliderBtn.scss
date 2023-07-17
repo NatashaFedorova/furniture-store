@@ -4,23 +4,23 @@
   align-items: center;
   width: 47px;
   height: 47px;
-  background-color: #cda861;
+  background-color: var(--button-bg-color);
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--transition-timing-function);
 
   &:hover,
   &:focus {
-    background-color: #34383d;
+    background-color: var(--button-bg-color-hover);
   }
 }
 
 .slider-btn-icon {
-  fill: #34383d;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--icon-btn-color);
+  transition: fill 250ms var(--transition-timing-function);
 
   .slider-btn:hover &,
   .slider-btn:focus & {
-    fill: #cda861;
+    fill: var(--icon-btn-color-hover);
   }
 }

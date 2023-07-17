@@ -1,25 +1,40 @@
 :root {
   --main-color: #34383d;
   --main-color-with-transparency: rgba(52, 56, 61, 0.8);
-  --secondary-color: #000;
+  --secondary-color: #000000;
+  --third-color: #ffffff;
+  --third-color-with-transparency: rgba(255, 255, 255, 0.8);
   --accent-color: #cda861;
 
   --logo-color: #ffffff;
   --logo-bg-color: #34383d;
 
+  --button-text-color: #34383d;
+  --button-text-color-hover: #cda861;
   --button-bg-color: #cda861;
   --button-bg-color-hover: #34383d;
+  --button-box-shadow-color: rgba(52, 56, 61, 0.2);
 
   --icon-btn-color: #34383d;
   --icon-btn-color-hover: #cda861;
 
-  --border: rgba(86, 86, 85, 0.5);
+  --border-img: #8c94a6;
+  --box-shadow-img-hover: rgba(0, 0, 0, 0.5);
 
   --main-bg: #ffffff;
+  --accent-footer-bg: #cda861;
+  --secondary-footer-bg: #34383d;
   --accent-bg-first: rgba(205, 168, 97, 0.1);
   --accent-bg-secondary: rgba(205, 168, 97, 0.19);
-  --card-bg-color: #d3d3d3;
+  --card-bg-color: #f8f7f7;
+  --card-border-color: rgba(86, 86, 85, 0.5);
+  --card-border-color-hover: #565655;
+  --card-box-shadow-hover: rgba(0, 0, 0, 0.29);
+  --blog-accent-bg: #f5eee1;
+  --bg-under-img: #d3d3d3;
 
   --main-font-family: 'Roboto', sans-serif;
   --accent-font-family: 'Montserrat', sans-serif;
+
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

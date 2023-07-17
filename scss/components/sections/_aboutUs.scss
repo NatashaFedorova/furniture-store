@@ -6,7 +6,7 @@
 }
 
 .about-us__background {
-  background-color: rgba(205, 168, 97, 0.1);
+  background-color: var(--accent-bg-first);
   border-radius: 50px;
 }
 
@@ -29,14 +29,14 @@
     width: 170px;
 
     animation: lineVisibilityUnderTitleAboutUsSection 600ms
-      cubic-bezier(0.4, 0, 0.2, 1) 100ms forwards;
+      var(--transition-timing-function) 100ms forwards;
   }
 }
 
 .about-us__after-title {
   margin-bottom: 30px;
   width: 461px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--accent-font-family);
   font-size: 76px;
   font-weight: 600;
   text-transform: uppercase;

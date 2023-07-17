@@ -18,7 +18,7 @@
   margin-bottom: 30px;
   text-align: center;
   font-weight: 500;
-  color: rgba(52, 56, 61, 0.8);
+  color: var(--main-color-with-transparency);
 }
 
 .featured-products__list {
@@ -36,16 +36,16 @@
   display: block;
   width: 400px;
   height: 300px;
-  background-color: lightgray;
-  border: 2px solid #8c94a6;
+  background-color: var(--bg-under-img);
+  border: 2px solid var(--border-img);
   border-radius: 20px;
   overflow: hidden;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--transition-timing-function);
 }
 
 .featured-products__item:hover .featured-products__img-wrapper,
 .featured-products__item:focus .featured-products__img-wrapper {
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 10px 0px var(--box-shadow-img-hover);
 }
 
 .featured-products__card-title {
@@ -72,7 +72,7 @@
   font-size: 32px;
   font-weight: 400;
   line-height: 1.2;
-  color: #cda861;
+  color: var(--accent-color);
 }
 
 .featured-products__price-btn-rating {
