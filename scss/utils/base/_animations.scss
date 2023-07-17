@@ -252,9 +252,22 @@
 
 @keyframes lineVisibilityUnderTitle {
   from {
-    transform: scale(0.3);
+    left: 50%;
+    transform: translateX(-50%) scale(0.3);
   }
   to {
-    transform: scale(1);
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+@keyframes lineVisibilityUnderTitleAboutUsSection {
+  from {
+    left: 0;
+    transform: translateX(0) scale(0.3);
+  }
+  to {
+    left: 0;
+    transform: translateX(0) scale(1);
   }
 }

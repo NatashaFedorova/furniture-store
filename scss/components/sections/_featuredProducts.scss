@@ -8,8 +8,10 @@
     bottom 516px right 631px;
 }
 
-.featured-products__title.decor-title-element::after {
-  width: 354px;
+.featured-products__title {
+  &.decor-title-element::after {
+    width: 354px;
+  }
 }
 
 .featured-products__text {

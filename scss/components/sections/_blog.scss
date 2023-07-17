@@ -7,8 +7,10 @@
   background-position: top 92px right 70px, left -49px bottom 502px;
 }
 
-.blog__title.decor-title-element::after {
-  width: 430px;
+.blog__title {
+  &.decor-title-element::after {
+    width: 430px;
+  }
 }
 
 .blog__text {
@@ -36,12 +38,12 @@
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.blog__item:hover,
-.blog__item:focus {
-  border-color: #565655;
-  box-shadow: 0px 5px 39px 0px rgba(0, 0, 0, 0.29);
+  &:hover,
+  &:focus {
+    border-color: #565655;
+    box-shadow: 0px 5px 39px 0px rgba(0, 0, 0, 0.29);
+  }
 }
 
 .blog__post-bg {
@@ -61,7 +63,7 @@
   position: absolute;
   bottom: 20px;
   left: 50px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .blog__icon {

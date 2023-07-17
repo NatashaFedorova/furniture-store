@@ -4,12 +4,12 @@
   line-height: 1.18;
   color: #ffffff;
   background-color: #34383d;
-}
 
-.logo:hover,
-.logo:focus {
-  animation-name: changeColorLogo;
-  animation-duration: 500ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-iteration-count: 2;
+  &:hover,
+  &:focus {
+    animation-name: changeColorLogo;
+    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: 2;
+  }
 }

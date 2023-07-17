@@ -1,7 +1,25 @@
 :root {
-  --main-color: #212121;
+  --main-color: #34383d;
+  --main-color-with-transparency: rgba(52, 56, 61, 0.8);
+  --secondary-color: #000;
+  --accent-color: #cda861;
+
+  --logo-color: #ffffff;
+  --logo-bg-color: #34383d;
+
+  --button-bg-color: #cda861;
+  --button-bg-color-hover: #34383d;
+
+  --icon-btn-color: #34383d;
+  --icon-btn-color-hover: #cda861;
+
+  --border: rgba(86, 86, 85, 0.5);
+
+  --main-bg: #ffffff;
+  --accent-bg-first: rgba(205, 168, 97, 0.1);
+  --accent-bg-secondary: rgba(205, 168, 97, 0.19);
+  --card-bg-color: #d3d3d3;
+
   --main-font-family: 'Roboto', sans-serif;
-  --logo-font-family: 'Raleway', sans-serif;
-  --flex-gap: 15px;
-  --main-gap: 30px;
+  --accent-font-family: 'Montserrat', sans-serif;
 }

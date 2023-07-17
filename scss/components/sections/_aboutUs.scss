@@ -22,10 +22,15 @@
   text-align: left;
 }
 
-.about-us__title.decor-title-element::after {
-  left: 0;
-  transform: translateX(0);
-  width: 170px;
+.about-us__title {
+  &.decor-title-element::after {
+    left: 0;
+    transform: translateX(0);
+    width: 170px;
+
+    animation: lineVisibilityUnderTitleAboutUsSection 600ms
+      cubic-bezier(0.4, 0, 0.2, 1) 100ms forwards;
+  }
 }
 
 .about-us__after-title {
