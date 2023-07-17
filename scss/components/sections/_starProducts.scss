@@ -17,7 +17,7 @@
 .star-products__text {
   margin-bottom: 30px;
   font-weight: 500;
-  color: rgba(52, 56, 61, 0.8);
+  color: var(--main-color-with-transparency);
   text-align: center;
 }
 
@@ -40,7 +40,7 @@
     transform: translate(50%, -50%);
     width: 113px;
     height: 1px;
-    background-color: #34383d;
+    background-color: var(--dark-bg);
   }
 }
 
@@ -51,15 +51,15 @@
   align-items: center;
   width: 130px;
   height: 130px;
-  background-color: #fffcfc;
-  border: 1px solid #34383d;
+  background-color: var(--bg-filter);
+  border: 1px solid var(--border-filter-color);
   border-radius: 50%;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--transition-timing-function);
 
   &:hover,
   &:focus {
-    border-color: #cda861;
+    border-color: var(--accent-color);
   }
 }
 
@@ -69,18 +69,18 @@
   align-items: center;
   width: 100px;
   height: 100px;
-  background-color: rgba(52, 56, 61, 0.2);
+  background-color: var(--dark-bg-with-transparency);
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--transition-timing-function);
 
   .star-products__filter-btn--active & {
-    background-color: #cda861;
+    background-color: var(--accent-color);
   }
 
   .star-products__filter-btn:hover &,
   .star-products__filter-btn:focus & {
-    background-color: #cda861;
+    background-color: var(--accent-color);
   }
 }
 
@@ -106,12 +106,12 @@
 .star-products__item {
   padding: 36px 54px 36px 54px;
   flex-grow: 1;
-  border: 2px dashed rgba(52, 56, 61, 0.5);
+  border: 2px dashed var(--main-color-with-transparency-secondary);
   border-radius: 200px 200px 20px 20px;
 
   &:hover,
   &:focus {
-    box-shadow: 0px 15px 39px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 39px 0px var(--box-shadow);
   }
 }
 
@@ -155,26 +155,26 @@
   align-items: center;
   width: 47px;
   height: 47px;
-  background-color: #cda861;
+  background-color: var(--accent-color);
   border-radius: 50%;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px var(--box-shadow-third);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--transition-timing-function);
 
   &:hover,
   &:focus {
-    background-color: #34383d;
+    background-color: var(--dark-bg);
   }
 }
 
 .star-products__btn-cart-icon {
-  stroke: #34383d;
+  stroke: var(--main-color);
 
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 250ms var(--transition-timing-function);
 
   .star-products__btn-cart:hover &,
   .star-products__btn-cart:focus & {
-    stroke: #cda861;
+    stroke: var(--accent-color);
   }
 }
 

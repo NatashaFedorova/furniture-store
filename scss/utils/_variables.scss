@@ -1,37 +1,45 @@
 :root {
   --main-color: #34383d;
   --main-color-with-transparency: rgba(52, 56, 61, 0.8);
+  --main-color-with-transparency-secondary: rgba(52, 56, 61, 0.6);
   --secondary-color: #000000;
   --third-color: #ffffff;
   --third-color-with-transparency: rgba(255, 255, 255, 0.8);
   --accent-color: #cda861;
 
-  --logo-color: #ffffff;
-  --logo-bg-color: #34383d;
-
-  --button-text-color: #34383d;
-  --button-text-color-hover: #cda861;
-  --button-bg-color: #cda861;
-  --button-bg-color-hover: #34383d;
-  --button-box-shadow-color: rgba(52, 56, 61, 0.2);
-
-  --icon-btn-color: #34383d;
-  --icon-btn-color-hover: #cda861;
-
-  --border-img: #8c94a6;
-  --box-shadow-img-hover: rgba(0, 0, 0, 0.5);
-
+  // ------------------------bg---------------------------
   --main-bg: #ffffff;
-  --accent-footer-bg: #cda861;
-  --secondary-footer-bg: #34383d;
+  --dark-bg: #34383d;
+  --dark-bg-with-transparency: rgb(52, 56, 61, 0.2);
+  --bg-secondary: #f5eee1;
+  --accent-bg: #cda861;
+
   --accent-bg-first: rgba(205, 168, 97, 0.1);
   --accent-bg-secondary: rgba(205, 168, 97, 0.19);
   --card-bg-color: #f8f7f7;
+  --card-bg-color-secondary: #f2f1f1;
+
+  --bg-under-img: #d3d3d3;
+  --bg-filter: #fffcfc;
+
+  // -----------------------box-shadow---------------------
+  --box-shadow: rgba(0, 0, 0, 0.1);
+  --box-shadow-secondary: rgba(0, 0, 0, 0.15);
+  --box-shadow-third: rgba(0, 0, 0, 0.25);
+  --button-box-shadow-color: rgba(52, 56, 61, 0.2);
+  --box-shadow-img-hover: rgba(0, 0, 0, 0.5);
+  --card-box-shadow-hover: rgba(0, 0, 0, 0.29);
+
+  // ----------------------border---------------------------
+  --border-img: #8c94a6;
+  --border-color-secondary: #ffffff;
+  --border-color-third: #aacacd;
+  --border-timer-color: #f3e9e9;
+  --border-filter-color: #34383d;
   --card-border-color: rgba(86, 86, 85, 0.5);
   --card-border-color-hover: #565655;
-  --card-box-shadow-hover: rgba(0, 0, 0, 0.29);
-  --blog-accent-bg: #f5eee1;
-  --bg-under-img: #d3d3d3;
+
+  // ----------------------fonts---------------------------
 
   --main-font-family: 'Roboto', sans-serif;
   --accent-font-family: 'Montserrat', sans-serif;

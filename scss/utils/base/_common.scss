@@ -1,9 +1,9 @@
 body {
   position: relative;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font-family);
   font-size: 22px;
   line-height: 1.23;
-  color: #34383d;
-  background-color: #ffffff;
+  color: var(--main-color);
+  background-color: var(--main-bg);
   /* cursor: url(../images/cursor.png), auto; */
 }

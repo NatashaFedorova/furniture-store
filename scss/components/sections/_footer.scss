@@ -1,5 +1,5 @@
 .page-footer__upper-part {
-  background-color: var(--accent-footer-bg);
+  background-color: var(--accent-color);
 
   & .container {
     padding-top: 80px;
@@ -101,7 +101,7 @@
 }
 
 .page-footer__lower-part {
-  background-color: var(--secondary-footer-bg);
+  background-color: var(--dark-bg);
 
   & .container {
     padding-top: 18px;

@@ -1,5 +1,5 @@
 .reviews {
-  background-color: #f5eee1;
+  background-color: var(--bg-secondary);
 }
 
 .reviews__container {
@@ -38,30 +38,30 @@
   transform: translateX(-50%);
   width: 108px;
   height: 108px;
-  background-color: lightgray;
-  border: 2px solid #fff;
+  background-color: var(--bg-under-img);
+  border: 2px solid var(--border-color-secondary);
   border-radius: 50%;
   overflow: hidden;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--transition-timing-function);
 
   .reviews__item:hover &,
   .reviews__item:focus & {
-    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 9px 0px var(--box-shadow-secondary);
   }
 }
 
 .reviews__content-wrapper {
   padding: 108px 21px 50px 21px;
-  background: #f8f7f7;
+  background: var(--card-bg-color);
   border-radius: 30px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px 0px var(--box-shadow);
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--transition-timing-function);
 
   .reviews__item:hover &,
   .reviews__item:focus & {
-    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 18px 0px var(--box-shadow-secondary);
   }
 }
 
@@ -75,17 +75,17 @@
   margin-bottom: 50px;
   font-size: 18px;
   letter-spacing: 1.62px;
-  color: rgba(52, 56, 61, 0.8);
+  color: var(--main-color-with-transparency);
 }
 
 .reviews__name {
   font-weight: 700;
   letter-spacing: 1.98px;
-  color: #000;
+  color: var(--secondary-color);
 }
 
 .reviews__profession {
   font-size: 20px;
   letter-spacing: 1.8px;
-  color: #000;
+  color: var(--secondary-color);
 }

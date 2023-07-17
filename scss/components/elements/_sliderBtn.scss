@@ -4,23 +4,23 @@
   align-items: center;
   width: 47px;
   height: 47px;
-  background-color: var(--button-bg-color);
+  background-color: var(--accent-color);
   border-radius: 50%;
 
   transition: background-color 250ms var(--transition-timing-function);
 
   &:hover,
   &:focus {
-    background-color: var(--button-bg-color-hover);
+    background-color: var(--dark-bg);
   }
 }
 
 .slider-btn-icon {
-  fill: var(--icon-btn-color);
+  fill: var(--main-color);
   transition: fill 250ms var(--transition-timing-function);
 
   .slider-btn:hover &,
   .slider-btn:focus & {
-    fill: var(--icon-btn-color-hover);
+    fill: var(--accent-color);
   }
 }

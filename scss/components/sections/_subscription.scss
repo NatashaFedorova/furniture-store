@@ -1,5 +1,5 @@
 .subscription {
-  background: #f5eee1;
+  background: var(--bg-secondary);
 }
 
 .subscription__container {
@@ -12,10 +12,10 @@
 
 .subscription__content-wrapper {
   padding: 100px 720px 343px 110px;
-  background-color: lightgray;
+  background-color: var(--bg-under-img);
   background-image: url(../images/bg-img-subscription-min.jpg);
   border-radius: 20px;
-  box-shadow: 0px 34px 62px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 34px 62px 0px var(--box-shadow);
 }
 
 .subscription__title {
@@ -31,7 +31,7 @@
 
 .subscription__text {
   margin-bottom: 80px;
-  color: #000;
+  color: var(--secondary-color);
   text-align: center;
 }
 
@@ -49,27 +49,27 @@
 .subscription__input {
   padding: 26px 40px;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--third-color);
   border-radius: 150px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-family: Montserrat, sans-serif;
+  box-shadow: 0px 4px 4px 0px var(--box-shadow-third);
+  font-family: var(--accent-font-family);
   font-weight: 400;
   font-size: 22px;
   line-height: 1.2;
-  color: #000;
+  color: var(--accent-color);
 
   &:focus,
   &:hover {
-    color: #cda861;
+    color: var(--accent-color);
   }
 
   &::placeholder,
   &::placeholder {
-    color: #000;
+    color: var(--secondary-color);
   }
 
   &:focus::placeholder,
   &:hover::placeholder {
-    color: #cda861;
+    color: var(--accent-color);
   }
 }

@@ -17,13 +17,13 @@
     ),
     url(../images/bg-img-sale-min.png),
     lightgray 1.6px -106.427px / 100% 146.938% no-repeat;
-  border: 5px solid #aacacd;
+  border: 5px solid var(--border-color-third);
   border-radius: 50px;
 }
 
 .sale__title {
   margin-bottom: 34px;
-  color: #000000;
+  color: var(--secondary-color);
 }
 
 .sale__timer {
@@ -44,7 +44,7 @@
   flex-direction: column;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
-  color: #000;
+  color: var(--secondary-color);
 }
 
 .sale__timer-value {
@@ -55,7 +55,7 @@
   width: 66px;
   height: 66px;
   font-size: 24px;
-  border: 1px solid #f3e9e9;
+  border: 1px solid var(--border-timer-color);
   border-radius: 50%;
 }
 

@@ -19,20 +19,20 @@
 
 .hero__decorative-element-bg--lamp {
   width: 217px;
-  animation: visibilityDecorativeElementLamp 500ms cubic-bezier(0.4, 0, 0.2, 1)
-    900ms forwards;
+  animation: visibilityDecorativeElementLamp 500ms
+    var(--transition-timing-function) 900ms forwards;
 }
 
 .hero__decorative-element-bg--sofa {
   width: 852px;
-  animation: visibilityDecorativeElementSofa 500ms cubic-bezier(0.4, 0, 0.2, 1)
-    100ms forwards;
+  animation: visibilityDecorativeElementSofa 500ms
+    var(--transition-timing-function) 100ms forwards;
 }
 
 .hero__decorative-element-bg--plant {
   width: 209px;
-  animation: visibilityDecorativeElementPlant 500ms cubic-bezier(0.4, 0, 0.2, 1)
-    400ms forwards;
+  animation: visibilityDecorativeElementPlant 500ms
+    var(--transition-timing-function) 400ms forwards;
 }
 
 .hero__container {
@@ -52,7 +52,7 @@
 .hero__title {
   margin-bottom: 105px;
   width: 640px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--accent-font-family);
   font-weight: 600;
   font-size: 76px;
   line-height: 1.22;
@@ -60,7 +60,7 @@
 
 .hero__title--accent {
   position: relative;
-  color: #cda861;
+  color: var(--accent-color);
 
   &::after {
     content: '';
@@ -69,16 +69,18 @@
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: #cda861;
+    background-color: var(--accent-color);
 
-    animation: lineVisibilityUnderTitle 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms
-      forwards;
+    animation: lineVisibilityUnderTitle 500ms var(--transition-timing-function)
+      100ms forwards;
   }
 }
 
 .hero__text {
   margin-bottom: 104px;
   width: 489px;
+  font-weight: 500;
+  color: var(--main-color-with-transparency);
 }
 
 .hero__btn {
