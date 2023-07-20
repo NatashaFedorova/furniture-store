@@ -11,6 +11,7 @@
   --dark-bg-with-transparency: rgb(52, 56, 61, 0.2);
   --bg-secondary: #f5eee1;
   --accent-bg: #cda861;
+  --backdrop-color: rgb(52, 56, 61, 0.6);
   --accent-bg-first: rgba(205, 168, 97, 0.1);
   --accent-bg-secondary: rgba(205, 168, 97, 0.19);
   --card-bg-color: #f8f7f7;
@@ -94,7 +95,10 @@ body {
   line-height: 1.23;
   color: var(--main-color);
   background-color: var(--main-bg);
-  /* cursor: url(../images/cursor.png), auto; */
+  cursor: url(../images/cursor.png), auto;
+}
+body:has(.no-scroll) {
+  overflow: hidden;
 }
 
 @keyframes changeColorLogo {
@@ -252,7 +256,7 @@ body {
   text-transform: uppercase;
 }
 
-.slider-btn {
+.circle-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,15 +266,15 @@ body {
   border-radius: 50%;
   transition: background-color 250ms var(--transition-timing-function);
 }
-.slider-btn:hover, .slider-btn:focus {
+.circle-btn:hover, .circle-btn:focus {
   background-color: var(--dark-bg);
 }
 
-.slider-btn-icon {
+.circle-btn-icon {
   fill: var(--main-color);
   transition: fill 250ms var(--transition-timing-function);
 }
-.slider-btn:hover .slider-btn-icon, .slider-btn:focus .slider-btn-icon {
+.circle-btn:hover .circle-btn-icon, .circle-btn:focus .circle-btn-icon {
   fill: var(--accent-color);
 }
 
@@ -1007,6 +1011,52 @@ body {
   height: 75px;
   background: linear-gradient(rgba(94, 87, 73, 0.2), rgba(159, 155, 137, 0.2));
   border-radius: 37px;
+}
+
+.backdrop {
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backdrop-color);
+  opacity: 1;
+  transition: opacity 250ms var(--transition-timing-function), visibility 250ms var(--transition-timing-function);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1);
+}
+
+.modal {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: var(--bg-secondary);
+  border-radius: 50px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms var(--transition-timing-function);
+  padding: 40px;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(1.1);
+}
+
+.close-btn {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.close-btn__icon {
+  width: 15px;
+  height: 15px;
 }
 
 .products__container {

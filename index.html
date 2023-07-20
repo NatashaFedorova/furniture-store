@@ -48,7 +48,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./prettierrs/prettierrs.json" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -76,7 +75,9 @@
                 Currency: USD
               </p>
             </div>
-            <button class="btn" type="submit">My Account</button>
+            <button class="btn" type="button" data-modal-open>
+              My Account
+            </button>
           </div>
         </div>
         <div class="page-header__lower-part">
@@ -209,8 +210,8 @@
             choices from us.
           </p>
           <div class="products__slider">
-            <button class="products__slider-btn slider-btn" type="button">
-              <svg class="slider-btn-icon" width="12" height="15">
+            <button class="products__circle-btn circle-btn" type="button">
+              <svg class="circle-btn-icon" width="12" height="15">
                 <use href="./images/icons.svg#icon-vector-left"></use>
               </svg>
             </button>
@@ -388,8 +389,8 @@
                 </button>
               </li>
             </ul>
-            <button class="products__slider-btn slider-btn" type="button">
-              <svg class="slider-btn-icon" width="12" height="15">
+            <button class="products__circle-btn circle-btn" type="button">
+              <svg class="circle-btn-icon" width="12" height="15">
                 <use href="./images/icons.svg#icon-vector-right"></use>
               </svg>
             </button>
@@ -460,8 +461,8 @@
             </li>
           </ul>
           <div class="star-products__slider">
-            <button class="star-products__slider-btn slider-btn" type="button">
-              <svg class="slider-btn-icon" width="12" height="15">
+            <button class="star-products__circle-btn circle-btn" type="button">
+              <svg class="circle-btn-icon" width="12" height="15">
                 <use href="./images/icons.svg#icon-vector-left"></use>
               </svg>
             </button>
@@ -615,8 +616,8 @@
                 <p class="star-products__price">&#36;599.99</p>
               </li>
             </ul>
-            <button class="star-products__slider-btn slider-btn" type="button">
-              <svg class="slider-btn-icon" width="12" height="15">
+            <button class="star-products__circle-btn circle-btn" type="button">
+              <svg class="circle-btn-icon" width="12" height="15">
                 <use href="./images/icons.svg#icon-vector-right"></use>
               </svg>
             </button>
@@ -1385,5 +1386,21 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn circle-btn" type="button" data-modal-close>
+          <svg class="close-btn__icon circle-btn-icon">
+            <use href="./images/icons.svg#icon-close" width="15" height="15" />
+          </svg>
+        </button>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+          alias autem in nobis. Repellat qui officia consequatur voluptates,
+          sunt velit harum possimus nostrum ex, animi ad cupiditate amet ducimus
+          modi!
+        </p>
+      </div>
+    </div>
+    <script type="module" src="./js/modal.js"></script>
   </body>
 </html>

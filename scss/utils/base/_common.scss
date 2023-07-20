@@ -5,5 +5,9 @@ body {
   line-height: 1.23;
   color: var(--main-color);
   background-color: var(--main-bg);
-  /* cursor: url(../images/cursor.png), auto; */
+  cursor: url(../images/cursor.png), auto;
+
+  &:has(.no-scroll) {
+    overflow: hidden;
+  }
 }

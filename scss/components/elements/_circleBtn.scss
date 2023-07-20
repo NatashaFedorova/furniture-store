@@ -1,4 +1,4 @@
-.slider-btn {
+.circle-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,12 +15,12 @@
   }
 }
 
-.slider-btn-icon {
+.circle-btn-icon {
   fill: var(--main-color);
   transition: fill 250ms var(--transition-timing-function);
 
-  .slider-btn:hover &,
-  .slider-btn:focus & {
+  .circle-btn:hover &,
+  .circle-btn:focus & {
     fill: var(--accent-color);
   }
 }
