@@ -17,4 +17,10 @@
     color: var(--accent-color);
     background-color: var(--dark-bg);
   }
+
+  &:focus-visible {
+    outline: none;
+    color: var(--main-color);
+    background-color: var(--accent-color);
+  }
 }

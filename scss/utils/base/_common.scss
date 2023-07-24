@@ -4,10 +4,23 @@ body {
   font-size: 22px;
   line-height: 1.23;
   color: var(--main-color);
-  background-color: var(--main-bg);
+  background: linear-gradient(
+    90deg,
+    #d6cfc2 0%,
+    rgba(255, 255, 255, 0.5) 60%,
+    #d6cfc2 100%
+  );
   cursor: url(../images/cursor.png), auto;
 
-  &:has(.no-scroll) {
+  &.lock {
     overflow: hidden;
   }
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.page-main {
+  background-color: var(--main-bg);
 }
