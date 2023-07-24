@@ -8,9 +8,7 @@ WARNING! Not all images are optimized!
 
 I am working now !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-1. Change not scrolling (now the picture jumps)
-2. Change the animation for the modal
-3. User login form
+1. User login form
 
 It is necessary to do:
 

@@ -95,7 +95,6 @@ body {
   line-height: 1.23;
   color: var(--main-color);
   background: linear-gradient(90deg, #d6cfc2 0%, rgba(255, 255, 255, 0.5) 60%, #d6cfc2 100%);
-  cursor: url(../images/cursor.png), auto;
 }
 body.lock {
   overflow: hidden;
@@ -148,13 +147,13 @@ body.lock {
   0% {
     background: url(../images/hero/lamp-min.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     transform: scale(1.2);
   }
   100% {
     background: url(../images/hero/lamp-min.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     transform: scale(1);
   }
 }
@@ -162,13 +161,13 @@ body.lock {
   from {
     background: url(../images/hero/sofa-min.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     transform: scale(1.2) translateX(27%);
   }
   to {
     background: url(../images/hero/sofa-min.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     transform: scale(1);
   }
 }
@@ -176,13 +175,13 @@ body.lock {
   from {
     background: url(../images/hero/plant-min.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     transform: scale(0.8) translateX(-5%);
   }
   to {
     background: url(../images/hero/plant-min.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     transform: scale(1);
   }
 }
