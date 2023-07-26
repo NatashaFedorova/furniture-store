@@ -1425,18 +1425,18 @@
     <div class="modal" data-modal>
       <div class="modal__backdrop">
         <div class="modal__content">
-          <ul class="list-of-links-user-forms">
-            <li class="list-of-links-user-forms__item">
+          <ul class="list-of-links">
+            <li class="list-of-links_item registration">
               <a
-                class="list-of-links-user-forms__link sign-up-form-link"
+                class="list-of-links_link registration-link"
                 href="#registration"
                 type="button"
                 >Registration</a
               >
             </li>
-            <li class="list-of-links-user-forms__item">
+            <li class="list-of-links_item sign-in">
               <a
-                class="list-of-links-user-forms__link sign-in-form-link"
+                class="list-of-links_link sign-in-link"
                 href="#sign-in"
                 type="button"
                 >Sign in</a
@@ -1444,53 +1444,110 @@
             </li>
           </ul>
 
-          <div class="sign-up-card" id="registration">
+          <div class="card registration-card" id="registration">
             <div class="form-wrapper">
-              <form class="register-form user-form">
+              <form class="user-form register-form">
                 <div>
-                  <input
-                    class="user-from__input"
-                    type="text"
-                    name="username"
-                    placeholder="Name"
-                  />
-                  <input
-                    class="user-from__input"
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                  />
-                  <input
-                    class="user-from__input"
-                    type="password"
-                    name="password"
-                    placeholder="Password"
-                  />
+                  <div class="user-form__input-wrapper">
+                    <svg class="user-form_icon">
+                      <use
+                        href="./images/icons.svg#icon-user"
+                        width="24"
+                        height="24"
+                      />
+                    </svg>
+                    <input
+                      class="user-from__input"
+                      type="text"
+                      name="username"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="user-form__input-wrapper">
+                    <svg class="user-form_icon">
+                      <use
+                        href="./images/icons.svg#icon-email"
+                        width="24"
+                        height="24"
+                      />
+                    </svg>
+                    <input
+                      class="user-from__input"
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="user-form__input-wrapper">
+                    <svg class="user-form_icon">
+                      <use
+                        href="./images/icons.svg#icon-password"
+                        width="24"
+                        height="24"
+                      />
+                    </svg>
+                    <input
+                      class="user-from__input"
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                    />
+                  </div>
                 </div>
-                <button class="modal__form-btn btn" type="submit">
-                  Sign up
-                </button>
+                <button class="user-form_btn btn" type="submit">Sign up</button>
               </form>
-              <button
-                class="modal__close-btn btn"
-                type="button"
-                data-modal-close
-              >
+              <button class="cancel-btn btn" type="button" data-modal-close>
                 Cancel
               </button>
             </div>
           </div>
-          <!-- <div class="sign-in-card" id="sign-in">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Molestiae eum assumenda corporis, sed accusantium facere!
-              Pariatur, non. Repellat vel perspiciatis aut porro tempore alias
-              vitae a. Dicta numquam reprehenderit omnis.
-            </p>
-          </div> -->
+
+          <div class="card sign-in-card" id="sign-in">
+            <div class="form-wrapper">
+              <form class="user-form sign-in-form">
+                <div>
+                  <div class="user-form__input-wrapper">
+                    <svg class="user-form_icon">
+                      <use
+                        href="./images/icons.svg#icon-user"
+                        width="24"
+                        height="24"
+                      />
+                    </svg>
+                    <input
+                      class="user-from__input"
+                      type="text"
+                      name="username"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="user-form__input-wrapper">
+                    <svg class="user-form_icon">
+                      <use
+                        href="./images/icons.svg#icon-password"
+                        width="24"
+                        height="24"
+                      />
+                    </svg>
+                    <input
+                      class="user-from__input"
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                    />
+                  </div>
+                </div>
+                <button class="user-form_btn btn" type="submit">Sign in</button>
+              </form>
+              <button class="cancel-btn btn" type="button" data-modal-close>
+                Cancel
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/user-form.js"></script>
   </body>
 </html>

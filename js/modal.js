@@ -4,17 +4,32 @@ const refs = {
   modal: document.querySelector('[data-modal]'),
   body: document.querySelector('body'),
   lockPadding: document.querySelectorAll('.lock-padding'),
+
+  itemWithActiveLink: document.querySelectorAll('.list-of-links_link'),
+  registrationLink: document.querySelector('.registration-link'),
+  signInLink: document.querySelector('.sign-in-link'),
+  registrationCard: document.querySelector('.registration-card'),
+  cards: document.querySelectorAll('.card'),
 };
 
 refs.openModalBtn.addEventListener('click', openModal);
 refs.closeModalBtn.addEventListener('click', closeModalByClickingCloseBtn);
 refs.modal.addEventListener('click', closeModalByClickingOnBackdrop);
+refs.registrationLink.addEventListener('click', changeActiveCard);
+refs.signInLink.addEventListener('click', changeActiveCard);
 document.addEventListener('keydown', closeModalByEscape);
 
 function openModal() {
   bodyLock();
   refs.body.classList.add('lock');
   refs.modal.classList.add('open');
+  refs.registrationCard.classList.add('open');
+  refs.signInLink.classList.add('no-active');
+}
+
+function changeActiveCard() {
+  refs.cards.forEach((el) => el.classList.toggle('open'));
+  refs.itemWithActiveLink.forEach((el) => el.classList.toggle('no-active'));
 }
 
 function closeModalByClickingCloseBtn() {
