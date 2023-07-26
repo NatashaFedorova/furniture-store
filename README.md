@@ -8,8 +8,7 @@ WARNING! Not all images are optimized!
 
 I am working now !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-1. User login form
-2. Universal modal window with cards (rename class)
+1. Sign in form - not work cancel button
 
 It is necessary to do:
 

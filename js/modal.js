@@ -1,6 +1,6 @@
 const refs = {
   openModalBtn: document.querySelector('[data-modal-open]'),
-  closeModalBtn: document.querySelector('[data-modal-close]'),
+  closeModalBtn: document.querySelectorAll('[data-modal-close]'),
   modal: document.querySelector('[data-modal]'),
   body: document.querySelector('body'),
   lockPadding: document.querySelectorAll('.lock-padding'),
@@ -13,7 +13,9 @@ const refs = {
 };
 
 refs.openModalBtn.addEventListener('click', openModal);
-refs.closeModalBtn.addEventListener('click', closeModalByClickingCloseBtn);
+refs.closeModalBtn.forEach((el) =>
+  el.addEventListener('click', closeModalByClickingCloseBtnOrSubmit)
+);
 refs.modal.addEventListener('click', closeModalByClickingOnBackdrop);
 refs.registrationLink.addEventListener('click', changeActiveCard);
 refs.signInLink.addEventListener('click', changeActiveCard);
@@ -32,10 +34,15 @@ function changeActiveCard() {
   refs.itemWithActiveLink.forEach((el) => el.classList.toggle('no-active'));
 }
 
-function closeModalByClickingCloseBtn() {
+export function closeModalByClickingCloseBtnOrSubmit() {
   refs.modal.classList.remove('open');
   refs.body.classList.remove('lock');
   bodyUnLock();
+
+  setTimeout(() => {
+    refs.itemWithActiveLink.forEach((el) => el.classList.remove('no-active'));
+    refs.cards.forEach((el) => el.classList.remove('open'));
+  }, 100);
 }
 
 function closeModalByClickingOnBackdrop(e) {
@@ -62,7 +69,7 @@ function bodyLock() {
   refs.body.classList.add('lock');
 }
 
-function bodyUnLock() {
+export function bodyUnLock() {
   refs.lockPadding.forEach((el) => (el.style.paddingRight = '0px'));
   refs.body.style.paddingRight = '0px';
   refs.body.classList.remove('lock');
