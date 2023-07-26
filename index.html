@@ -1425,25 +1425,69 @@
     <div class="modal" data-modal>
       <div class="modal__backdrop">
         <div class="modal__content">
-          <button
-            class="modal__close-btn circle-btn"
-            type="button"
-            data-modal-close
-          >
-            <svg class="modal__close-btn-icon circle-btn-icon">
-              <use
-                href="./images/icons.svg#icon-close"
-                width="15"
-                height="15"
-              />
-            </svg>
-          </button>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequatur alias autem in nobis. Repellat qui officia consequatur
-            voluptates, sunt velit harum possimus nostrum ex, animi ad
-            cupiditate amet ducimus modi!
-          </p>
+          <ul class="list-of-links-user-forms">
+            <li class="list-of-links-user-forms__item">
+              <a
+                class="list-of-links-user-forms__link sign-up-form-link"
+                href="#registration"
+                type="button"
+                >Registration</a
+              >
+            </li>
+            <li class="list-of-links-user-forms__item">
+              <a
+                class="list-of-links-user-forms__link sign-in-form-link"
+                href="#sign-in"
+                type="button"
+                >Sign in</a
+              >
+            </li>
+          </ul>
+
+          <div class="sign-up-card" id="registration">
+            <div class="form-wrapper">
+              <form class="register-form user-form">
+                <div>
+                  <input
+                    class="user-from__input"
+                    type="text"
+                    name="username"
+                    placeholder="Name"
+                  />
+                  <input
+                    class="user-from__input"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                  <input
+                    class="user-from__input"
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+                </div>
+                <button class="modal__form-btn btn" type="submit">
+                  Sign up
+                </button>
+              </form>
+              <button
+                class="modal__close-btn btn"
+                type="button"
+                data-modal-close
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+          <!-- <div class="sign-in-card" id="sign-in">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Molestiae eum assumenda corporis, sed accusantium facere!
+              Pariatur, non. Repellat vel perspiciatis aut porro tempore alias
+              vitae a. Dicta numquam reprehenderit omnis.
+            </p>
+          </div> -->
         </div>
       </div>
     </div>

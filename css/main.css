@@ -147,13 +147,13 @@ body.lock {
   0% {
     background: url(../images/hero/lamp-min.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transform: scale(1.2);
   }
   100% {
     background: url(../images/hero/lamp-min.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transform: scale(1);
   }
 }
@@ -161,13 +161,13 @@ body.lock {
   from {
     background: url(../images/hero/sofa-min.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transform: scale(1.2) translateX(27%);
   }
   to {
     background: url(../images/hero/sofa-min.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transform: scale(1);
   }
 }
@@ -175,13 +175,13 @@ body.lock {
   from {
     background: url(../images/hero/plant-min.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transform: scale(0.8) translateX(-5%);
   }
   to {
     background: url(../images/hero/plant-min.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transform: scale(1);
   }
 }
@@ -485,7 +485,7 @@ body.lock {
 }
 
 .featured-products__container {
-  padding: 80px 230px;
+  padding: 80px 218px;
   background-image: url(../images/decor-img-1-featured-products.svg), url(../images/decor-img-1-featured-products.svg), url(../images/decor-img-2-featured-products.svg);
   background-repeat: no-repeat;
   background-position: top 327px left 60px, top 5px right -73px, bottom 516px right 631px;
@@ -504,12 +504,29 @@ body.lock {
 
 .featured-products__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 80px;
+}
+@media screen and (min-width: 1750px) {
+  .featured-products__list {
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1820px) {
+  .featured-products__list {
+    gap: 80px;
+  }
 }
 
-.featured-products__item {
-  flex-basis: calc((100% - 160px) / 3);
+@media screen and (min-width: 1750px) {
+  .featured-products__item {
+    flex-basis: calc((100% - 80px) / 3);
+  }
+}
+@media screen and (min-width: 1820px) {
+  .featured-products__item {
+    flex-basis: calc((100% - 160px) / 3);
+  }
 }
 
 .featured-products__img-wrapper {
@@ -1055,11 +1072,12 @@ body.lock {
 }
 
 .modal__content {
-  background-color: #fff;
-  color: #000;
-  max-width: 800px;
-  padding: 30px;
   position: relative;
+  z-index: 10;
+  background-color: transparent;
+  width: 540px;
+  height: 100%;
+  border-radius: 20px;
   transition: all 250ms var(--transition-timing-function);
   opacity: 0;
   transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
@@ -1071,14 +1089,85 @@ body.lock {
 }
 
 .modal__close-btn {
-  margin-left: auto;
-  width: 40px;
-  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-family: var(--accent-font-family);
+  font-weight: 700;
+  font-size: 18px;
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  border-radius: 50px;
+  transition: background-color 250ms var(--transition-timing-function);
+}
+.products__item:hover .modal__close-btn, .products__item:focus .modal__close-btn {
+  background-color: var(--accent-color);
 }
 
-.modal__close-btn-icon {
-  width: 15px;
-  height: 15px;
+.list-of-links-user-forms {
+  display: flex;
+}
+
+.list-of-links-user-forms__item {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: white;
+}
+
+.list-of-links-user-forms__link {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: inherit;
+}
+.list-of-links-user-forms__link:hover, .list-of-links-user-forms__link:focus, .list-of-links-user-forms__link:active {
+  color: var(--accent-color);
+}
+
+.sign-in-form-link {
+  box-shadow: inset 0px 5px 10px 0px var(--button-box-shadow-color);
+  border-left: 1px solid rgb(189, 177, 177);
+  border-bottom: 1px solid rgb(189, 177, 177);
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+}
+
+.sign-up-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.form-wrapper {
+  padding: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+}
+
+.user-form {
+  margin-bottom: 40px;
+}
+
+.user-from__input {
+  display: block;
+  width: 100%;
+  border: 1px solid rgb(189, 177, 177);
+  margin-bottom: 24px;
+}
+.user-from__input:last-child {
+  margin-bottom: 50px;
+}
+
+.modal__form-btn {
+  width: 100%;
 }
 
 .products__container {

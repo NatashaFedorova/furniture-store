@@ -9,6 +9,7 @@ WARNING! Not all images are optimized!
 I am working now !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 1. User login form
+2. Universal modal window with cards (rename class)
 
 It is necessary to do:
 

@@ -1,5 +1,5 @@
 .featured-products__container {
-  padding: 80px 230px;
+  padding: 80px 218px;
   background-image: url(../images/decor-img-1-featured-products.svg),
     url(../images/decor-img-1-featured-products.svg),
     url(../images/decor-img-2-featured-products.svg);
@@ -23,12 +23,24 @@
 
 .featured-products__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 80px;
+
+  @media screen and (min-width: 1750px) {
+    gap: 40px;
+  }
+  @media screen and (min-width: 1820px) {
+    gap: 80px;
+  }
 }
 
 .featured-products__item {
-  flex-basis: calc((100% - 2 * 80px) / 3);
+  @media screen and (min-width: 1750px) {
+    flex-basis: calc((100% - 2 * 40px) / 3);
+  }
+  @media screen and (min-width: 1820px) {
+    flex-basis: calc((100% - 2 * 80px) / 3);
+  }
 }
 
 .featured-products__img-wrapper {

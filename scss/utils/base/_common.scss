@@ -10,7 +10,7 @@ body {
     rgba(255, 255, 255, 0.5) 60%,
     #d6cfc2 100%
   );
-  cursor: url(../images/cursor.png), auto;
+  // cursor: url(../images/cursor.png), auto;
 
   &.lock {
     overflow: hidden;
