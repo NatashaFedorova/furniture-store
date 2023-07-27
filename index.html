@@ -419,19 +419,48 @@
               </h2>
               <div class="sale__timer">
                 <p class="sale__days">
-                  <span class="sale__timer-value">200</span
+                  <span class="sale__timer-value" data-timer-days
+                    >4<svg class="sale__timer-state" height="100" width="100">
+                      <circle
+                        class="sale__circle days"
+                        cx="45"
+                        cy="45"
+                        r="33"
+                        data-visual-timer-days
+                      /></svg></span
                   ><span class="sale__timer-text">Days</span>
                 </p>
                 <p class="sale__hours">
-                  <span class="sale__timer-value">8</span
+                  <span class="sale__timer-value" data-timer-hours
+                    >8<svg class="sale__timer-state" height="100" width="100">
+                      <circle
+                        class="sale__circle hours"
+                        cx="45"
+                        cy="45"
+                        r="33"
+                      /></svg></span
                   ><span class="sale__timer-text">Hours</span>
                 </p>
                 <p class="sale__minutes">
-                  <span class="sale__timer-value">45</span
+                  <span class="sale__timer-value" data-timer-minutes
+                    >45<svg class="sale__timer-state" height="100" width="100">
+                      <circle
+                        class="sale__circle minutes"
+                        cx="45"
+                        cy="45"
+                        r="33"
+                      /></svg></span
                   ><span class="sale__timer-text">Minutes</span>
                 </p>
                 <p class="sale__seconds">
-                  <span class="sale__timer-value">50</span
+                  <span class="sale__timer-value" data-timer-seconds
+                    >20<svg class="sale__timer-state" height="100" width="100">
+                      <circle
+                        class="sale__circle seconds"
+                        cx="45"
+                        cy="45"
+                        r="33"
+                      /></svg></span
                   ><span class="sale__timer-text">Seconds</span>
                 </p>
               </div>
@@ -1444,7 +1473,6 @@
               >
             </li>
           </ul>
-
           <div class="card registration-card">
             <div class="form-wrapper">
               <form class="user-form register-form" id="registration">
@@ -1560,5 +1588,6 @@
     </div>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/user-form.js"></script>
+    <script type="module" src="./js/timer.js"></script>
   </body>
 </html>

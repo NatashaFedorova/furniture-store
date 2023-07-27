@@ -8,20 +8,20 @@ WARNING! Not all images are optimized!
 
 I am working now !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-1. Sign in form - not work cancel button
+1. get username from localstorage and add in HTML
+2. Timer
 
 It is necessary to do:
 
 1. Download pictures 1x, 2x and optimize
 2. Export the extra pictures from the sprite and picture folder
-3. Timer
-4. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
-5. The rating should be in the form of a list
+3. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
+4. The rating should be in the form of a list
 
 Additionally
 
 1. Additional pages
-2. Script for "My Account"
-3. Sliders
-4. A modal window as a reaction to a subscription
-5. Animation for yellow stars
+2. Sliders
+3. A modal window as a reaction to a subscription
+4. Animation for yellow stars
+5. Social media - added links

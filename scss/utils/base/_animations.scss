@@ -271,3 +271,21 @@
     transform: translateX(0) scale(1);
   }
 }
+
+@keyframes timerStateMinutes {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -210;
+  }
+}
+
+@keyframes timerStateSeconds {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -210;
+  }
+}

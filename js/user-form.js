@@ -1,19 +1,15 @@
-import { bodyUnLock, closeModalByClickingCloseBtnOrSubmit } from './modal.js';
+import { closeModalByClickingCloseBtnOrSubmit } from './modal.js';
 
 const refs = {
   registerForm: document.querySelector('#registration'),
   signInForm: document.querySelector('#sign-in'),
-  registrationFormSubmitter: document.querySelector(
-    '.registration-form-submitter'
-  ),
-  signInFormSubmitter: document.querySelector('.sign-in-form-submitter'),
-  username: document.querySelector('.usermane'),
-  modal: document.querySelector('[data-modal]'),
-  body: document.querySelector('body'),
+  username: document.querySelector('.username'),
 };
 
 refs.registerForm.addEventListener('submit', submitForm);
 refs.signInForm.addEventListener('submit', submitForm);
+
+getUserName();
 
 function submitForm(e) {
   e.preventDefault();
@@ -24,5 +20,11 @@ function submitForm(e) {
   }
   localStorage.setItem('username', user.name);
   closeModalByClickingCloseBtnOrSubmit();
+  getUserName();
   e.target.reset();
+}
+
+function getUserName() {
+  const name = localStorage.getItem('username');
+  refs.username.textContent = name;
 }

@@ -48,6 +48,7 @@
 }
 
 .sale__timer-value {
+  position: relative;
   margin-bottom: 3px;
   display: flex;
   justify-content: center;
@@ -57,6 +58,38 @@
   font-size: 24px;
   border: 1px solid var(--border-timer-color);
   border-radius: 50%;
+}
+
+.sale__timer-state {
+  position: absolute;
+  bottom: -14px;
+  left: -23px;
+  transform: rotateZ(270deg) rotateX(178deg);
+}
+
+.sale__circle {
+  stroke: var(--main-bg);
+  stroke-width: 4;
+  fill: transparent;
+  stroke-dasharray: 210;
+
+  &.days {
+    stroke-dashoffset: -40; // example
+  }
+
+  &.hours {
+    stroke-dashoffset: -160; // example
+  }
+
+  &.minutes {
+    stroke-dashoffset: -110; // example
+  }
+
+  &.seconds {
+    animation-name: timerStateSeconds;
+    animation-timing-function: linear;
+    animation-duration: 60s;
+  }
 }
 
 .sale__timer-text {
