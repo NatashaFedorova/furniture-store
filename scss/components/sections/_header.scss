@@ -63,6 +63,15 @@
 .welcome {
   font-style: italic;
   font-weight: 500;
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.username {
+  color: var(--accent-color);
+  text-decoration-line: underline;
 }
 
 .page-header__currency {
@@ -84,6 +93,14 @@
 
 .page-header__type-currency--home-page {
   color: var(--third-color);
+}
+
+.page-header_sign-out-btn.is-hidden {
+  display: none;
+}
+
+.page-header_account-btn.is-hidden {
+  display: none;
 }
 
 .navigation {

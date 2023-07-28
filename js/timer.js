@@ -17,19 +17,10 @@ timerDisplayInSeconds();
 getCurrentDate();
 
 function getCurrentDate() {
-  //   const date = new Date('2023-07-24');
-  //   console.log(date.getDay()); // Повертає день тижня Sunday - Saturday : 0 - 6
-
   // Отримання поточної дати
   const currentDate = new Date();
-
   // Визначення дня тижня (0 - неділя, 1 - понеділок, ..., 6 - субота)
   const currentDayOfWeek = currentDate.getDay();
-
-  console.log(
-    'currentDate',
-    currentDate.getDate() - currentDayOfWeek + (currentDayOfWeek === 0 ? -6 : 1)
-  );
 
   // Визначення дати попереднього понеділка
   const previousMonday = new Date(currentDate);
