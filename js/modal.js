@@ -1,4 +1,6 @@
 const refs = {
+  registerForm: document.querySelector('[data-registration]'),
+  signInForm: document.querySelector('[data-sign-in]'),
   openModalBtn: document.querySelector('[data-modal-open]'),
   closeModalBtn: document.querySelectorAll('[data-modal-close]'),
   modal: document.querySelector('[data-modal]'),
@@ -30,35 +32,33 @@ function openModal() {
 }
 
 function changeActiveCard() {
+  resetForms();
   refs.cards.forEach((el) => el.classList.toggle('open'));
   refs.itemWithActiveLink.forEach((el) => el.classList.toggle('no-active'));
 }
 
 export function closeModalByClickingCloseBtnOrSubmit() {
+  closeModal();
+}
+
+function closeModalByClickingOnBackdrop(e) {
+  if (e.target === document.querySelector('.modal__backdrop')) closeModal();
+}
+
+function closeModalByEscape(e) {
+  if (e.code === 'Escape') closeModal();
+}
+
+function closeModal() {
   refs.modal.classList.remove('open');
   refs.body.classList.remove('lock');
+  resetForms();
   bodyUnLock();
 
   setTimeout(() => {
     refs.itemWithActiveLink.forEach((el) => el.classList.remove('no-active'));
     refs.cards.forEach((el) => el.classList.remove('open'));
   }, 100);
-}
-
-function closeModalByClickingOnBackdrop(e) {
-  if (e.target === document.querySelector('.modal__backdrop')) {
-    refs.modal.classList.remove('open');
-    refs.body.classList.remove('lock');
-    bodyUnLock();
-  }
-}
-
-function closeModalByEscape(e) {
-  if (e.code === 'Escape') {
-    refs.modal.classList.remove('open');
-    refs.body.classList.remove('lock');
-    bodyUnLock();
-  }
 }
 
 function bodyLock() {
@@ -73,4 +73,9 @@ export function bodyUnLock() {
   refs.lockPadding.forEach((el) => (el.style.paddingRight = '0px'));
   refs.body.style.paddingRight = '0px';
   refs.body.classList.remove('lock');
+}
+
+function resetForms() {
+  refs.registerForm.reset();
+  refs.signInForm.reset();
 }

@@ -771,6 +771,7 @@ body.lock {
 }
 
 .welcome {
+  font-size: 28px;
   font-style: italic;
   font-weight: 500;
 }
@@ -926,17 +927,17 @@ body.lock {
 
 .hero__decorative-element-bg--lamp {
   width: 217px;
-  animation: visibilityDecorativeElementLamp 500ms var(--transition-timing-function) 900ms forwards;
+  animation: visibilityDecorativeElementLamp 1000ms var(--transition-timing-function) 1300ms forwards;
 }
 
 .hero__decorative-element-bg--sofa {
   width: 852px;
-  animation: visibilityDecorativeElementSofa 500ms var(--transition-timing-function) 100ms forwards;
+  animation: visibilityDecorativeElementSofa 1000ms var(--transition-timing-function) 300ms forwards;
 }
 
 .hero__decorative-element-bg--plant {
   width: 209px;
-  animation: visibilityDecorativeElementPlant 500ms var(--transition-timing-function) 400ms forwards;
+  animation: visibilityDecorativeElementPlant 1000ms var(--transition-timing-function) 800ms forwards;
 }
 
 .hero__container {
@@ -1225,7 +1226,7 @@ body.lock {
   stroke: var(--main-color-with-transparency-secondary);
   transition: all 250ms var(--transition-timing-function);
 }
-.user-form__input-wrapper:hover .user-form_icon, .user-form__input-wrapper:focus .user-form_icon {
+.user-from__input:hover + .user-form_icon, .user-from__input:focus + .user-form_icon {
   stroke: var(--accent-color);
 }
 

@@ -17,20 +17,20 @@ getUserName();
 
 function submitRegisterForm(e) {
   e.preventDefault();
-  formDataHandler(refs.registerForm);
-  closeModalByClickingCloseBtnOrSubmit();
-  getUserName();
-  visibilitySignOutBtn();
-  e.target.reset();
+  submitAnyUserForm(refs.registerForm);
 }
 
 function submitSignInForm(e) {
   e.preventDefault();
-  formDataHandler(refs.signInForm);
+  submitAnyUserForm(refs.signInForm);
+  e.target.reset();
+}
+
+function submitAnyUserForm(form) {
+  formDataHandler(form);
   closeModalByClickingCloseBtnOrSubmit();
   visibilitySignOutBtn();
   getUserName();
-  e.target.reset();
 }
 
 function formDataHandler(form) {
@@ -47,9 +47,9 @@ function getUserName() {
   if (name) {
     refs.username.textContent = name;
     visibilityWelcomeUser();
+    visibilitySignOutBtn();
     hiddenAccountBtn();
   } else {
-    hiddenSignOutBtn();
     hiddenWelcomeUser();
   }
 }

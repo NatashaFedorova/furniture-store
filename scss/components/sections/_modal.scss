@@ -166,8 +166,8 @@
 
   transition: all 250ms var(--transition-timing-function);
 
-  .user-form__input-wrapper:hover &,
-  .user-form__input-wrapper:focus & {
+  .user-from__input:hover + &,
+  .user-from__input:focus + & {
     stroke: var(--accent-color);
   }
 }

@@ -80,7 +80,7 @@
                 </p>
               </div>
               <button
-                class="page-header_sign-out-btn btn"
+                class="page-header_sign-out-btn btn is-hidden"
                 type="button"
                 data-sign-out
               >
@@ -1496,6 +1496,17 @@
               >
                 <div>
                   <div class="user-form__input-wrapper">
+                    <input
+                      class="user-from__input"
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      minlength="2"
+                      maxlength="30"
+                      pattern="[a-zA-Z0-9]+"
+                      title="Username can only contain characters from a-z, A-Z, or 0-9"
+                      required
+                    />
                     <svg class="user-form_icon">
                       <use
                         href="./images/icons.svg#icon-user"
@@ -1503,14 +1514,18 @@
                         height="24"
                       />
                     </svg>
-                    <input
-                      class="user-from__input"
-                      type="text"
-                      name="name"
-                      placeholder="Name"
-                    />
                   </div>
                   <div class="user-form__input-wrapper">
+                    <input
+                      class="user-from__input"
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      maxlength="50"
+                      title="The @ symbol must be present in the address"
+                      pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                      required
+                    />
                     <svg class="user-form_icon">
                       <use
                         href="./images/icons.svg#icon-email"
@@ -1518,14 +1533,17 @@
                         height="24"
                       />
                     </svg>
-                    <input
-                      class="user-from__input"
-                      type="email"
-                      name="email"
-                      placeholder="Email"
-                    />
                   </div>
                   <div class="user-form__input-wrapper">
+                    <input
+                      class="user-from__input"
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                      pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@!#$%^&*])[0-9a-zA-Z@!#$%^&*]{8,}$"
+                      title="Password must contain at least one lowercase letter, one uppercase letter, one number, one special character and must be at least 8 or more characters long"
+                      required
+                    />
                     <svg class="user-form_icon">
                       <use
                         href="./images/icons.svg#icon-password"
@@ -1533,12 +1551,6 @@
                         height="24"
                       />
                     </svg>
-                    <input
-                      class="user-from__input"
-                      type="password"
-                      name="password"
-                      placeholder="Password"
-                    />
                   </div>
                 </div>
                 <button
@@ -1559,6 +1571,17 @@
               <form class="user-form sign-in-form" id="sign-in" data-sign-in>
                 <div>
                   <div class="user-form__input-wrapper">
+                    <input
+                      class="user-from__input"
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      minlength="2"
+                      maxlength="30"
+                      pattern="[a-zA-Z0-9]+"
+                      title="Username can only contain characters from a-z, A-Z, or 0-9"
+                      required
+                    />
                     <svg class="user-form_icon">
                       <use
                         href="./images/icons.svg#icon-user"
@@ -1566,14 +1589,17 @@
                         height="24"
                       />
                     </svg>
-                    <input
-                      class="user-from__input"
-                      type="text"
-                      name="name"
-                      placeholder="Name"
-                    />
                   </div>
                   <div class="user-form__input-wrapper">
+                    <input
+                      class="user-from__input"
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                      pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@!#$%^&*])[0-9a-zA-Z@!#$%^&*]{8,}$"
+                      title="Password must contain at least one lowercase letter, one uppercase letter, one number, one special character and must be at least 8 or more characters long"
+                      required
+                    />
                     <svg class="user-form_icon">
                       <use
                         href="./images/icons.svg#icon-password"
@@ -1581,12 +1607,6 @@
                         height="24"
                       />
                     </svg>
-                    <input
-                      class="user-from__input"
-                      type="password"
-                      name="password"
-                      placeholder="Password"
-                    />
                   </div>
                 </div>
                 <button
