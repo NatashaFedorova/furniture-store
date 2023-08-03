@@ -433,48 +433,55 @@
               </h2>
               <div class="sale__timer">
                 <p class="sale__days">
-                  <span class="sale__timer-value" data-timer-days
-                    >4<svg class="sale__timer-state" height="100" width="100">
-                      <circle
-                        class="sale__circle days"
-                        cx="45"
-                        cy="45"
-                        r="33"
-                        data-visual-timer-days
-                      /></svg></span
+                  <svg class="sale__timer-state" height="100" width="100">
+                    <circle
+                      class="sale__circle days is-hidden"
+                      cx="45"
+                      cy="45"
+                      r="33"
+                      data-visual-timer-days
+                    />
+                  </svg>
+                  <span class="sale__timer-value" data-timer-days></span
                   ><span class="sale__timer-text">Days</span>
                 </p>
                 <p class="sale__hours">
-                  <span class="sale__timer-value" data-timer-hours
-                    >8<svg class="sale__timer-state" height="100" width="100">
-                      <circle
-                        class="sale__circle hours"
-                        cx="45"
-                        cy="45"
-                        r="33"
-                      /></svg></span
+                  <svg class="sale__timer-state" height="100" width="100">
+                    <circle
+                      class="sale__circle hours is-hidden"
+                      cx="45"
+                      cy="45"
+                      r="33"
+                      data-visual-timer-hours
+                    />
+                  </svg>
+                  <span class="sale__timer-value" data-timer-hours></span
                   ><span class="sale__timer-text">Hours</span>
                 </p>
                 <p class="sale__minutes">
-                  <span class="sale__timer-value" data-timer-minutes
-                    >45<svg class="sale__timer-state" height="100" width="100">
-                      <circle
-                        class="sale__circle minutes"
-                        cx="45"
-                        cy="45"
-                        r="33"
-                      /></svg></span
+                  <svg class="sale__timer-state" height="100" width="100">
+                    <circle
+                      class="sale__circle minutes is-hidden"
+                      cx="45"
+                      cy="45"
+                      r="33"
+                      data-visual-timer-minutes
+                    />
+                  </svg>
+                  <span class="sale__timer-value" data-timer-minutes></span
                   ><span class="sale__timer-text">Minutes</span>
                 </p>
                 <p class="sale__seconds">
-                  <span class="sale__timer-value" data-timer-seconds
-                    >20<svg class="sale__timer-state" height="100" width="100">
-                      <circle
-                        class="sale__circle seconds"
-                        cx="45"
-                        cy="45"
-                        r="33"
-                      /></svg></span
+                  <svg class="sale__timer-state" height="100" width="100">
+                    <circle
+                      class="sale__circle seconds is-hidden"
+                      cx="45"
+                      cy="45"
+                      r="33"
+                      data-visual-timer-seconds
+                    />
+                  </svg>
+                  <span class="sale__timer-value" data-timer-seconds></span
                   ><span class="sale__timer-text">Seconds</span>
                 </p>
               </div>
@@ -1523,7 +1530,6 @@
                       placeholder="Email"
                       maxlength="50"
                       title="The @ symbol must be present in the address"
-                      pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                       required
                     />
                     <svg class="user-form_icon">

@@ -38,6 +38,7 @@
 .sale__hours,
 .sale__minutes,
 .sale__seconds {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +49,6 @@
 }
 
 .sale__timer-value {
-  position: relative;
   margin-bottom: 3px;
   display: flex;
   justify-content: center;
@@ -62,33 +62,31 @@
 
 .sale__timer-state {
   position: absolute;
-  bottom: -14px;
-  left: -23px;
+  bottom: 11px;
+  left: -20px;
   transform: rotateZ(270deg) rotateX(178deg);
 }
 
 .sale__circle {
   stroke: var(--main-bg);
-  stroke-width: 4;
+  stroke-width: 5;
   fill: transparent;
-  stroke-dasharray: 210;
+  stroke-dasharray: 208;
 
-  &.days {
-    stroke-dashoffset: -40; // example
+  &.days.is-hidden {
+    display: none;
   }
 
-  &.hours {
-    stroke-dashoffset: -160; // example
+  &.hours.is-hidden {
+    display: none;
   }
 
-  &.minutes {
-    stroke-dashoffset: -110; // example
+  &.minutes.is-hidden {
+    display: none;
   }
 
-  &.seconds {
-    animation-name: timerStateSeconds;
-    animation-timing-function: linear;
-    animation-duration: 60s;
+  &.seconds.is-hidden {
+    display: none;
   }
 }
 

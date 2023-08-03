@@ -6,81 +6,128 @@ const refs = {
   minutes: document.querySelector('[data-timer-minutes]'),
   visualTimerMinutes: document.querySelector('[data-visual-timer-minutes]'),
   seconds: document.querySelector('[data-timer-seconds]'),
-  visualTimerSeconds: document.querySelector('[data-visual-timer-Seconds]'),
+  visualTimerSeconds: document.querySelector('[data-visual-timer-seconds]'),
 };
 
-timerDisplayInDays();
-timerDisplayInHours();
-timerDisplayInMinutes();
-timerDisplayInSeconds();
+setInterval(updateTimer, 1000);
 
-getCurrentDate();
-
-function getCurrentDate() {
-  // Отримання поточної дати
+function determiningTimeUntilTheEndOfSpecialOffers() {
+  // get current date
   const currentDate = new Date();
-  // Визначення дня тижня (0 - неділя, 1 - понеділок, ..., 6 - субота)
+  // const currentDate = new Date('2023-08-03T22:11:32'); // for example
+
+  // get the current day of the week (0 - sunday, 1 - monday, ..., 6 - saturday)
   const currentDayOfWeek = currentDate.getDay();
 
-  // Визначення дати попереднього понеділка
-  const previousMonday = new Date(currentDate);
-  previousMonday.setDate(
-    currentDate.getDate() - currentDayOfWeek + (currentDayOfWeek === 0 ? -6 : 1)
-  );
+  const nextMonday = new Date(currentDate.toString().split(' ').slice(0, 4));
+  if (currentDayOfWeek === 0) {
+    nextMonday.setDate(currentDate.getDate() + 1);
+  } else {
+    nextMonday.setDate(currentDate.getDate() + (8 - currentDayOfWeek));
+  }
 
-  // Визначення дати наступного понеділка
-  const nextMonday = new Date(currentDate);
-  const res = currentDate.getDate() + (8 - currentDayOfWeek);
-  console.log('res', res);
-  nextMonday.setDate(currentDate.getDate() + (8 - currentDayOfWeek));
+  // 1 sec = 1000ms
+  // 60 sec or 1 min = 60000ms
+  // 1 hour or 60 min = 3600000ms
+  // 1 day = 86400000 ms
 
-  // Вивід результатів у зручному форматі
-  console.log('currentDate:', currentDate.getTime());
-  console.log('previousMonday:', previousMonday.getTime());
-  console.log('nextMonday:', nextMonday.getTime());
-  console.log(
-    'Наступний понеділок:',
-    nextMonday.toString().split(' ').slice(0, 4)
-  );
+  const leftUntilNextMondayDays =
+    (nextMonday.getTime() - currentDate.getTime()) / 86400000;
 
-  const passedSinceLastMonday =
-    currentDate.getTime() - previousMonday.getTime();
-  console.log('passedSinceLastMonday:', passedSinceLastMonday);
-
-  const passedDays = passedSinceLastMonday / 86400000;
-  console.log('passedDays:', passedDays);
-
-  const leftUntilNextMondayDays = nextMonday.getTime() - currentDate.getTime();
-  console.log('leftUntilNextMondayDays:', leftUntilNextMondayDays / 86400000);
-
-  const leftUntilNextMondayHours = nextMonday.getTime() - currentDate.getTime();
-  console.log('leftUntilNextMondayHours:', leftUntilNextMondayHours / 3600000);
+  const leftUntilNextMondayHours =
+    (nextMonday.getTime() - currentDate.getTime()) / 3600000;
 
   const leftUntilNextMondayMinutes =
-    nextMonday.getTime() - currentDate.getTime();
-  console.log(
-    'leftUntilNextMondayMinutes:',
-    leftUntilNextMondayMinutes / 60000
-  );
+    (nextMonday.getTime() - currentDate.getTime()) / 60000;
+
+  const leftUntilNextMondaySeconds =
+    (nextMonday.getTime() - currentDate.getTime()) / 1000;
+
+  console.log({
+    days: parseInt(leftUntilNextMondayDays),
+    hours: parseInt(leftUntilNextMondayHours),
+    minutes: parseInt(leftUntilNextMondayMinutes),
+    seconds: parseInt(leftUntilNextMondaySeconds),
+  });
+
+  return {
+    days: parseInt(leftUntilNextMondayDays),
+    hours: parseInt(leftUntilNextMondayHours),
+    minutes: parseInt(leftUntilNextMondayMinutes),
+    seconds: parseInt(leftUntilNextMondaySeconds),
+  };
 }
 
-//
-
+// (208px / 7) * (7 - days)  - number of days passed in pixels
 function timerDisplayInDays() {
-  const value = refs.days.textContent;
-  //   refs.visualTimerDays.style.animationDuration = '2s';
+  const { days } = determiningTimeUntilTheEndOfSpecialOffers();
+
+  if (days === 0) {
+    refs.days.textContent = 0;
+  } else {
+    const valueStrokeDashoffset = parseInt((210 / 7) * (7 - days));
+    refs.visualTimerDays.style.strokeDashoffset = `-${valueStrokeDashoffset}`;
+    refs.visualTimerDays.classList.remove('is-hidden');
+    refs.days.textContent = days;
+  }
 }
 
+// (208 / 24) * (hours - 24 *  days)  - the number of hours spent taking into account full days
 function timerDisplayInHours() {
-  let hoursCount = refs.days.textContent;
+  const { days, hours } = determiningTimeUntilTheEndOfSpecialOffers();
+  const numberOfHoursToRender = parseInt(hours - 24 * days);
+
+  if (numberOfHoursToRender === 0) {
+    refs.hours.textContent = 0;
+  } else {
+    const valueStrokeDashoffset = parseInt(
+      (208 / 24) * (24 - numberOfHoursToRender)
+    );
+    refs.visualTimerHours.style.strokeDashoffset = `-${valueStrokeDashoffset}`;
+    refs.visualTimerHours.classList.remove('is-hidden');
+    refs.hours.textContent = numberOfHoursToRender;
+  }
 }
 
+// (208px / 168) * (168 - hours)  - number of days passed
 function timerDisplayInMinutes() {
-  let minutesCount = refs.days.textContent;
+  const { hours, minutes } = determiningTimeUntilTheEndOfSpecialOffers();
+  const numberOfMinutesToRender = parseInt(minutes - hours * 60);
+
+  if (minutes === 0) {
+    refs.minutes.textContent = 0;
+  } else {
+    const valueStrokeDashoffset = parseInt(
+      (208 / 60) * (60 - numberOfMinutesToRender)
+    );
+    refs.visualTimerMinutes.style.strokeDashoffset = `-${valueStrokeDashoffset}`;
+    refs.visualTimerMinutes.classList.remove('is-hidden');
+    refs.minutes.textContent = numberOfMinutesToRender;
+  }
 }
 
 function timerDisplayInSeconds() {
-  let secondsCount = refs.days.textContent;
+  const { minutes, seconds } = determiningTimeUntilTheEndOfSpecialOffers();
+  const numberOfSecondsToRender = parseInt(seconds - minutes * 60);
+  console.log(numberOfSecondsToRender);
+
+  if (minutes === 0) {
+    refs.seconds.textContent = 0;
+  } else {
+    const valueStrokeDashoffset = parseInt(
+      (208 / 60) * (60 - numberOfSecondsToRender)
+    );
+    refs.visualTimerSeconds.style.strokeDashoffset = `-${valueStrokeDashoffset}`;
+    refs.visualTimerSeconds.classList.remove('is-hidden');
+    refs.seconds.textContent = numberOfSecondsToRender;
+  }
+}
+
+function updateTimer() {
+  timerDisplayInDays();
+  timerDisplayInHours();
+  timerDisplayInMinutes();
+  timerDisplayInSeconds();
 }
 
 // animation: timerState 60s linear forwards;
@@ -90,8 +137,3 @@ function timerDisplayInSeconds() {
 // в ср в 12:30 - 4 днів 11 год 30 хв 00 сек приблизно
 // коло для днів буде не повним в середині тижня, але повним на початку
 //  коло годин відображає число тільки від 1 до 23 в середині дня не повне
-
-// 1 sec = 1000ms
-// 60 sec or 1 min = 60000
-// 60 sec * 60 min = 3 600 000 sec/hour
-// 1 day = 86 400 000 sec

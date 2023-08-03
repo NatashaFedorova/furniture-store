@@ -205,22 +205,6 @@ body.lock {
     transform: translateX(0) scale(1);
   }
 }
-@keyframes timerStateMinutes {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: -210;
-  }
-}
-@keyframes timerStateSeconds {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: -210;
-  }
-}
 .btn {
   display: block;
   width: 220px;
@@ -1493,6 +1477,7 @@ body.lock {
 .sale__hours,
 .sale__minutes,
 .sale__seconds {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1503,7 +1488,6 @@ body.lock {
 }
 
 .sale__timer-value {
-  position: relative;
   margin-bottom: 3px;
   display: flex;
   justify-content: center;
@@ -1517,30 +1501,28 @@ body.lock {
 
 .sale__timer-state {
   position: absolute;
-  bottom: -14px;
-  left: -23px;
+  bottom: 11px;
+  left: -20px;
   transform: rotateZ(270deg) rotateX(178deg);
 }
 
 .sale__circle {
   stroke: var(--main-bg);
-  stroke-width: 4;
+  stroke-width: 5;
   fill: transparent;
-  stroke-dasharray: 210;
+  stroke-dasharray: 208;
 }
-.sale__circle.days {
-  stroke-dashoffset: -40;
+.sale__circle.days.is-hidden {
+  display: none;
 }
-.sale__circle.hours {
-  stroke-dashoffset: -160;
+.sale__circle.hours.is-hidden {
+  display: none;
 }
-.sale__circle.minutes {
-  stroke-dashoffset: -110;
+.sale__circle.minutes.is-hidden {
+  display: none;
 }
-.sale__circle.seconds {
-  animation-name: timerStateSeconds;
-  animation-timing-function: linear;
-  animation-duration: 60s;
+.sale__circle.seconds.is-hidden {
+  display: none;
 }
 
 .sale__timer-text {
