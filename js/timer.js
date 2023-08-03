@@ -1,4 +1,5 @@
 const refs = {
+  saleSection: document.querySelector('[data-sale-section]'),
   days: document.querySelector('[data-timer-days]'),
   visualTimerDays: document.querySelector('[data-visual-timer-days]'),
   hours: document.querySelector('[data-timer-hours]'),
@@ -114,9 +115,7 @@ function timerDisplayInSeconds() {
   if (minutes === 0) {
     refs.seconds.textContent = 0;
   } else {
-    const valueStrokeDashoffset = parseInt(
-      (208 / 60) * (60 - numberOfSecondsToRender)
-    );
+    const valueStrokeDashoffset = (208 / 60) * (60 - numberOfSecondsToRender);
     refs.visualTimerSeconds.style.strokeDashoffset = `-${valueStrokeDashoffset}`;
     refs.visualTimerSeconds.classList.remove('is-hidden');
     refs.seconds.textContent = numberOfSecondsToRender;
@@ -129,8 +128,6 @@ function updateTimer() {
   timerDisplayInMinutes();
   timerDisplayInSeconds();
 }
-
-// animation: timerState 60s linear forwards;
 
 // кожного тижня нова акція
 // в пн 00:00 - 7 днів 00 год 00 хв 00 сек

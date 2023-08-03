@@ -8,8 +8,8 @@ WARNING! Not all images are optimized!
 
 I am working now !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-1. get username from localstorage and add in HTML
-2. Timer
+1. Timer: turn on the timer when the section is visible
+2. Timer: animation for circle
 
 It is necessary to do:
 
