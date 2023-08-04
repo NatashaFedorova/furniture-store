@@ -10,7 +10,24 @@ const refs = {
   visualTimerSeconds: document.querySelector('[data-visual-timer-seconds]'),
 };
 
-setInterval(updateTimer, 1000);
+let nIntervId;
+
+const observer = new window.IntersectionObserver(
+  ([entry]) => {
+    if (entry.isIntersecting) {
+      nIntervId = setInterval(updateTimer, 1000);
+      return;
+    }
+    clearInterval(nIntervId);
+    nIntervId = null;
+  },
+  {
+    root: null,
+    threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
+  }
+);
+
+observer.observe(refs.saleSection);
 
 function determiningTimeUntilTheEndOfSpecialOffers() {
   // get current date
@@ -110,8 +127,6 @@ function timerDisplayInMinutes() {
 function timerDisplayInSeconds() {
   const { minutes, seconds } = determiningTimeUntilTheEndOfSpecialOffers();
   const numberOfSecondsToRender = parseInt(seconds - minutes * 60);
-  console.log(numberOfSecondsToRender);
-
   if (minutes === 0) {
     refs.seconds.textContent = 0;
   } else {
