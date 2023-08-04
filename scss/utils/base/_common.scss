@@ -11,6 +11,7 @@ body {
     #d6cfc2 100%
   );
   // cursor: url(../images/cursor.png), auto;
+  scroll-behavior: smooth;
 
   &.lock {
     overflow: hidden;

@@ -23,7 +23,7 @@ const observer = new window.IntersectionObserver(
   },
   {
     root: null,
-    threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
+    threshold: 0, // set offset 0.1 means trigger if atleast 10% of element in viewport
   }
 );
 
@@ -61,12 +61,12 @@ function determiningTimeUntilTheEndOfSpecialOffers() {
   const leftUntilNextMondaySeconds =
     (nextMonday.getTime() - currentDate.getTime()) / 1000;
 
-  console.log({
-    days: parseInt(leftUntilNextMondayDays),
-    hours: parseInt(leftUntilNextMondayHours),
-    minutes: parseInt(leftUntilNextMondayMinutes),
-    seconds: parseInt(leftUntilNextMondaySeconds),
-  });
+  // console.log({
+  //   days: parseInt(leftUntilNextMondayDays),
+  //   hours: parseInt(leftUntilNextMondayHours),
+  //   minutes: parseInt(leftUntilNextMondayMinutes),
+  //   seconds: parseInt(leftUntilNextMondaySeconds),
+  // });
 
   return {
     days: parseInt(leftUntilNextMondayDays),

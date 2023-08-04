@@ -8,8 +8,7 @@ WARNING! Not all images are optimized!
 
 I am working now !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-1. Timer: turn on the timer when the section is visible
-2. Timer: animation for circle
+1. Animation for yellow stars
 
 It is necessary to do:
 
@@ -23,5 +22,3 @@ Additionally
 1. Additional pages
 2. Sliders
 3. A modal window as a reaction to a subscription
-4. Animation for yellow stars
-5. Social media - added links
