@@ -1,18 +1,25 @@
 import { refs } from './refs.js';
 
-refs.openModalBtn.addEventListener('click', openModal);
+refs.openModalBtn.addEventListener('click', openUserModal);
 refs.closeModalBtn.forEach((el) =>
   el.addEventListener('click', closeModalByClickingCloseBtnOrSubmit)
 );
-refs.modal.addEventListener('click', closeModalByClickingOnBackdrop);
+refs.registerAndSignInModal.addEventListener(
+  'click',
+  closeModalByClickingOnBackdrop
+);
 refs.registrationLink.addEventListener('click', changeActiveCard);
 refs.signInLink.addEventListener('click', changeActiveCard);
+refs.subscriptionModal.addEventListener(
+  'click',
+  closeModalByClickingOnBackdrop
+);
 document.addEventListener('keydown', closeModalByEscape);
 
-function openModal() {
+function openUserModal() {
   bodyLock();
   refs.body.classList.add('lock');
-  refs.modal.classList.add('open');
+  refs.registerAndSignInModal.classList.add('open');
   refs.registrationCard.classList.add('open');
   refs.signInLink.classList.add('no-active');
 }
@@ -24,19 +31,19 @@ function changeActiveCard() {
 }
 
 export function closeModalByClickingCloseBtnOrSubmit() {
-  closeModal();
+  closeUserModal();
 }
 
 function closeModalByClickingOnBackdrop(e) {
-  if (e.target === document.querySelector('.modal__backdrop')) closeModal();
+  if (e.target === document.querySelector('.modal__backdrop')) closeUserModal();
 }
 
 function closeModalByEscape(e) {
-  if (e.code === 'Escape') closeModal();
+  if (e.code === 'Escape') closeUserModal();
 }
 
-function closeModal() {
-  refs.modal.classList.remove('open');
+function closeUserModal() {
+  refs.registerAndSignInModal.classList.remove('open');
   refs.body.classList.remove('lock');
   resetForms();
   bodyUnLock();
@@ -64,4 +71,17 @@ export function bodyUnLock() {
 function resetForms() {
   refs.registerForm.reset();
   refs.signInForm.reset();
+}
+
+export function openSubscriptionModal() {
+  bodyLock();
+  refs.body.classList.add('lock');
+  refs.subscriptionModal.classList.add('open');
+}
+
+export function closeSubscriptionModal() {
+  refs.subscriptionModal.classList.remove('open');
+  refs.body.classList.remove('lock');
+
+  bodyUnLock();
 }

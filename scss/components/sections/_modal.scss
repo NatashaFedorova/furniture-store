@@ -198,3 +198,25 @@
     background-color: var(--accent-color);
   }
 }
+
+.confirmation-of-subscription {
+  padding: 40px 0;
+  border-radius: 8px;
+  background-color: var(--main-bg);
+  background-image: url(../images/decor-img-1-featured-products.svg),
+    url(../images/decor-img-1-featured-products.svg);
+  background-repeat: no-repeat;
+  background-position: top 96px left -37px, top -26px right -32px;
+}
+
+.confirmation-of-subscription__accent-text {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.confirmation-of-subscription__text {
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}

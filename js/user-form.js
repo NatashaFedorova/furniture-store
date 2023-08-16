@@ -1,4 +1,5 @@
 import { closeModalByClickingCloseBtnOrSubmit } from './modal.js';
+import { changeSubscriptionStatus } from './subscription-form.js';
 import { refs } from './refs.js';
 
 refs.registerForm.addEventListener('submit', submitRegisterForm);
@@ -10,11 +11,14 @@ getUserName();
 function submitRegisterForm(e) {
   e.preventDefault();
   submitAnyUserForm(refs.registerForm);
+  location.assign('/');
+  e.target.reset();
 }
 
 function submitSignInForm(e) {
   e.preventDefault();
   submitAnyUserForm(refs.signInForm);
+  location.assign('/');
   e.target.reset();
 }
 
@@ -48,6 +52,8 @@ function getUserName() {
 
 function handlerSignOut() {
   localStorage.removeItem('username');
+  localStorage.removeItem('email');
+  changeSubscriptionStatus();
   hiddenWelcomeUser();
   hiddenSignOutBtn();
   visibilityAccountBtn();

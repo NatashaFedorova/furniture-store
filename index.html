@@ -1336,7 +1336,14 @@
               <p class="subscription__text">
                 Stay up to date with our new and trending works !!!
               </p>
-              <form class="subscription__form">
+
+              <p
+                class="subscription__subscription-status is-hidden"
+                data-subscription-status
+              >
+                You are subscribed!
+              </p>
+              <form class="subscription__form" data-subscription-form>
                 <input
                   class="subscription__input"
                   type="email"
@@ -1511,7 +1518,7 @@
         </div>
       </footer>
     </div>
-    <div class="modal" data-modal>
+    <div class="modal" data-modal-register-sign-in>
       <div class="modal__backdrop">
         <div class="modal__content">
           <ul class="list-of-links">
@@ -1668,9 +1675,24 @@
         </div>
       </div>
     </div>
+    <div class="modal" data-modal-subscription>
+      <div class="modal__backdrop">
+        <div class="modal__content">
+          <div class="confirmation-of-subscription">
+            <p class="confirmation-of-subscription__text">
+              <strong class="confirmation-of-subscription__accent-text"
+                >Сongratulations!</strong
+              >
+              <span> You are subscribed! </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./js/refs.js"></script>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/user-form.js"></script>
+    <script type="module" src="./js/subscription-form.js"></script>
     <script type="module" src="./js/timer.js"></script>
   </body>
 </html>

@@ -8,7 +8,14 @@ export const refs = {
 
   openModalBtn: document.querySelector('[data-modal-open]'),
   closeModalBtn: document.querySelectorAll('[data-modal-close]'),
-  modal: document.querySelector('[data-modal]'),
+  registerAndSignInModal: document.querySelector(
+    '[data-modal-register-sign-in]'
+  ),
+  subscriptionModal: document.querySelector('[data-modal-subscription]'),
+  subscriptionForm: document.querySelector('[data-subscription-form]'),
+
+  subscriptionStatus: document.querySelector('[data-subscription-status]'),
+
   body: document.querySelector('body'),
   lockPadding: document.querySelectorAll('.lock-padding'),
 

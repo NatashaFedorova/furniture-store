@@ -37,6 +37,10 @@
 
 .subscription__form {
   position: relative;
+
+  &.is-hidden {
+    display: none;
+  }
 }
 
 .subscription__btn {
@@ -71,5 +75,16 @@
   &:focus::placeholder,
   &:hover::placeholder {
     color: var(--accent-color);
+  }
+}
+
+.subscription__subscription-status {
+  font-size: 48px;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--accent-color);
+
+  &.is-hidden {
+    display: none;
   }
 }

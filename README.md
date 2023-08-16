@@ -19,4 +19,3 @@ Additionally
 
 1. Additional pages
 2. Sliders
-3. A modal window as a reaction to a subscription
