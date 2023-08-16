@@ -100,6 +100,9 @@ body {
 body.lock {
   overflow: hidden;
 }
+body.subscription-modal-open {
+  background: var(--bg-secondary);
+}
 
 .wrapper {
   overflow: hidden;
@@ -1103,12 +1106,14 @@ body.lock {
   background-color: transparent;
   width: 540px;
   height: 100%;
-  padding-top: 50px;
   border-radius: 20px;
   transition: all 250ms var(--transition-timing-function);
   opacity: 0;
   transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
   cursor: auto;
+}
+.modal__register-sign-in .modal__content {
+  padding-top: 50px;
 }
 .modal.open .modal__content {
   transform: perspective(600px) translate(0px, 0%) rotateX(0deg);

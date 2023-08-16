@@ -75,11 +75,13 @@ function resetForms() {
 
 export function openSubscriptionModal() {
   bodyLock();
+  refs.body.classList.add('subscription-modal-open');
   refs.body.classList.add('lock');
   refs.subscriptionModal.classList.add('open');
 }
 
 export function closeSubscriptionModal() {
+  refs.body.classList.remove('subscription-modal-open');
   refs.subscriptionModal.classList.remove('open');
   refs.body.classList.remove('lock');
 

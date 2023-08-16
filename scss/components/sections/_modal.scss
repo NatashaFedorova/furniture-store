@@ -33,11 +33,14 @@
   background-color: transparent;
   width: 540px;
   height: 100%;
-  padding-top: 50px;
   border-radius: 20px;
   transition: all 250ms var(--transition-timing-function);
   opacity: 0;
   transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+
+  .modal__register-sign-in & {
+    padding-top: 50px;
+  }
 
   .modal.open & {
     transform: perspective(600px) translate(0px, 0%) rotateX(0deg);

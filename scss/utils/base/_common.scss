@@ -16,6 +16,10 @@ body {
   &.lock {
     overflow: hidden;
   }
+
+  &.subscription-modal-open {
+    background: var(--bg-secondary);
+  }
 }
 
 .wrapper {

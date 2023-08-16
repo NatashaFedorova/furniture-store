@@ -8,14 +8,11 @@ WARNING! Not all images are optimized!
 
 I am working now !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-1. Animation for yellow stars
+1. Sliders
 
 It is necessary to do:
 
 1. Download pictures 1x, 2x and optimize
 2. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
-
-Additionally
-
-1. Additional pages
-2. Sliders
+3. Animation for yellow stars
+4. Additional pages
