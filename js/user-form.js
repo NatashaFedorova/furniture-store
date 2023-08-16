@@ -1,13 +1,5 @@
 import { closeModalByClickingCloseBtnOrSubmit } from './modal.js';
-
-const refs = {
-  registerForm: document.querySelector('[data-registration]'),
-  signInForm: document.querySelector('[data-sign-in]'),
-  welcomeUser: document.querySelector('[data-welcome-user]'),
-  username: document.querySelector('[data-username]'),
-  account: document.querySelector('[data-account]'),
-  signOut: document.querySelector('[data-sign-out]'),
-};
+import { refs } from './refs.js';
 
 refs.registerForm.addEventListener('submit', submitRegisterForm);
 refs.signInForm.addEventListener('submit', submitSignInForm);

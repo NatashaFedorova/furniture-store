@@ -13,9 +13,7 @@ I am working now !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 It is necessary to do:
 
 1. Download pictures 1x, 2x and optimize
-2. Export the extra pictures from the sprite and picture folder
-3. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
-4. The rating should be in the form of a list
+2. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
 
 Additionally
 

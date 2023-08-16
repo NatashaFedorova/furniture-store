@@ -1,14 +1,4 @@
-const refs = {
-  saleSection: document.querySelector('[data-sale-section]'),
-  days: document.querySelector('[data-timer-days]'),
-  visualTimerDays: document.querySelector('[data-visual-timer-days]'),
-  hours: document.querySelector('[data-timer-hours]'),
-  visualTimerHours: document.querySelector('[data-visual-timer-hours]'),
-  minutes: document.querySelector('[data-timer-minutes]'),
-  visualTimerMinutes: document.querySelector('[data-visual-timer-minutes]'),
-  seconds: document.querySelector('[data-timer-seconds]'),
-  visualTimerSeconds: document.querySelector('[data-visual-timer-seconds]'),
-};
+import { refs } from './refs.js';
 
 let nIntervId;
 

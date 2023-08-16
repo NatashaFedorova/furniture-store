@@ -1,18 +1,4 @@
-const refs = {
-  registerForm: document.querySelector('[data-registration]'),
-  signInForm: document.querySelector('[data-sign-in]'),
-  openModalBtn: document.querySelector('[data-modal-open]'),
-  closeModalBtn: document.querySelectorAll('[data-modal-close]'),
-  modal: document.querySelector('[data-modal]'),
-  body: document.querySelector('body'),
-  lockPadding: document.querySelectorAll('.lock-padding'),
-
-  itemWithActiveLink: document.querySelectorAll('.list-of-links_link'),
-  registrationLink: document.querySelector('.registration-link'),
-  signInLink: document.querySelector('.sign-in-link'),
-  registrationCard: document.querySelector('.registration-card'),
-  cards: document.querySelectorAll('.card'),
-};
+import { refs } from './refs.js';
 
 refs.openModalBtn.addEventListener('click', openModal);
 refs.closeModalBtn.forEach((el) =>

@@ -86,7 +86,7 @@
   width: 20px;
   height: 19px;
 
-  transition: transform 250ms var(--transition-timing-function);
+  transition: all 250ms var(--transition-timing-function);
 
   .products__item:hover & {
     transform: scale(1.25);
