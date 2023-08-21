@@ -85,11 +85,10 @@
   align-items: center;
   width: 20px;
   height: 19px;
-
   transition: all 250ms var(--transition-timing-function);
 
   .products__item:hover & {
-    transform: scale(1.25);
+    transform: scale(1.2);
   }
 }
 

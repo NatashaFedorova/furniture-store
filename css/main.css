@@ -213,8 +213,11 @@ body.subscription-modal-open {
   0% {
     transform: scale(0);
   }
+  50% {
+    transform: scale(1.4);
+  }
   100% {
-    transform: scale(1.2);
+    transform: scale(1);
   }
 }
 .btn {
@@ -1358,7 +1361,7 @@ body.subscription-modal-open {
   transition: all 250ms var(--transition-timing-function);
 }
 .products__item:hover .products__icon {
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 
 .products__price {

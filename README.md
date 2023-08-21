@@ -10,8 +10,6 @@ I am working now !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 It is necessary to do:
 
-1. Filter (star products section) - what is it and how to beat it (change the name of the buttons, make them non-clickable)
-2. Animation for yellow stars
 3. Additional pages
 
 <!-- ---------------------------------- -->

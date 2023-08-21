@@ -20,9 +20,7 @@ const observer = new window.IntersectionObserver(
 observer.observe(refs.saleSection);
 
 function determiningTimeUntilTheEndOfSpecialOffers() {
-  // get current date
   const currentDate = new Date();
-  // const currentDate = new Date('2023-08-03T22:11:32'); // for example
 
   // get the current day of the week (0 - sunday, 1 - monday, ..., 6 - saturday)
   const currentDayOfWeek = currentDate.getDay();
@@ -50,13 +48,6 @@ function determiningTimeUntilTheEndOfSpecialOffers() {
 
   const leftUntilNextMondaySeconds =
     (nextMonday.getTime() - currentDate.getTime()) / 1000;
-
-  // console.log({
-  //   days: parseInt(leftUntilNextMondayDays),
-  //   hours: parseInt(leftUntilNextMondayHours),
-  //   minutes: parseInt(leftUntilNextMondayMinutes),
-  //   seconds: parseInt(leftUntilNextMondaySeconds),
-  // });
 
   return {
     days: parseInt(leftUntilNextMondayDays),
