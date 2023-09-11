@@ -203,6 +203,24 @@
   }
 }
 
+@keyframes visibilityDecorBgHero {
+  0% {
+    background: url(../images/hero/img-hero-futniture-min.png),
+      url(../images/hero/img-bg-hero-1x-min.png);
+    background-repeat: no-repeat;
+    background-position: right -14px top 262px, right -300px center;
+    background-size: auto, contain;
+  }
+
+  100% {
+    background: url(../images/hero/img-hero-futniture-min.png),
+      url(../images/hero/img-bg-hero-1x-min.png);
+    background-repeat: no-repeat;
+    background-position: right 14px top 262px, right center;
+    background-size: auto, contain;
+  }
+}
+
 @keyframes visibilityDecorativeElementLamp {
   0% {
     background: url(../images/hero/lamp-min.png);

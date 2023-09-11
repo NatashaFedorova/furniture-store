@@ -20,19 +20,19 @@
 .hero__decorative-element-bg--lamp {
   width: 217px;
   animation: visibilityDecorativeElementLamp 1000ms
-    var(--transition-timing-function) 1300ms forwards;
+    var(--transition-timing-function) 1800ms forwards;
 }
 
 .hero__decorative-element-bg--sofa {
   width: 852px;
   animation: visibilityDecorativeElementSofa 1000ms
-    var(--transition-timing-function) 300ms forwards;
+    var(--transition-timing-function) 900ms forwards;
 }
 
 .hero__decorative-element-bg--plant {
   width: 209px;
   animation: visibilityDecorativeElementPlant 1000ms
-    var(--transition-timing-function) 800ms forwards;
+    var(--transition-timing-function) 1400ms forwards;
 }
 
 .hero__container {
@@ -40,11 +40,8 @@
   padding-top: 345px;
   padding-bottom: 228px;
 
-  background: url(../images/hero/img-hero-futniture-min.png),
-    url(../images/hero/img-bg-hero-1x-min.png);
-  background-repeat: no-repeat;
-  background-position: right 14px top 262px, right center;
-  background-size: auto, contain, contain;
+  animation: visibilityDecorBgHero 600ms var(--transition-timing-function) 600ms
+    forwards;
 
   overflow: hidden;
 }

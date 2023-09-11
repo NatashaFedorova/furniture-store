@@ -147,6 +147,20 @@ body.subscription-modal-open {
     background: linear-gradient(45deg, #34383d 0%, #34383d 10%, #34383d 20%, #34383d 30%, #34383d 40%, #34383d 50%, #34383d 60%, #34383d 70%, #34383d 80%, #34383d 90%, #55585c 100%);
   }
 }
+@keyframes visibilityDecorBgHero {
+  0% {
+    background: url(../images/hero/img-hero-futniture-min.png), url(../images/hero/img-bg-hero-1x-min.png);
+    background-repeat: no-repeat;
+    background-position: right -14px top 262px, right -300px center;
+    background-size: auto, contain;
+  }
+  100% {
+    background: url(../images/hero/img-hero-futniture-min.png), url(../images/hero/img-bg-hero-1x-min.png);
+    background-repeat: no-repeat;
+    background-position: right 14px top 262px, right center;
+    background-size: auto, contain;
+  }
+}
 @keyframes visibilityDecorativeElementLamp {
   0% {
     background: url(../images/hero/lamp-min.png);
@@ -926,27 +940,24 @@ body.subscription-modal-open {
 
 .hero__decorative-element-bg--lamp {
   width: 217px;
-  animation: visibilityDecorativeElementLamp 1000ms var(--transition-timing-function) 1300ms forwards;
+  animation: visibilityDecorativeElementLamp 1000ms var(--transition-timing-function) 1800ms forwards;
 }
 
 .hero__decorative-element-bg--sofa {
   width: 852px;
-  animation: visibilityDecorativeElementSofa 1000ms var(--transition-timing-function) 300ms forwards;
+  animation: visibilityDecorativeElementSofa 1000ms var(--transition-timing-function) 900ms forwards;
 }
 
 .hero__decorative-element-bg--plant {
   width: 209px;
-  animation: visibilityDecorativeElementPlant 1000ms var(--transition-timing-function) 800ms forwards;
+  animation: visibilityDecorativeElementPlant 1000ms var(--transition-timing-function) 1400ms forwards;
 }
 
 .hero__container {
   position: relative;
   padding-top: 345px;
   padding-bottom: 228px;
-  background: url(../images/hero/img-hero-futniture-min.png), url(../images/hero/img-bg-hero-1x-min.png);
-  background-repeat: no-repeat;
-  background-position: right 14px top 262px, right center;
-  background-size: auto, contain, contain;
+  animation: visibilityDecorBgHero 600ms var(--transition-timing-function) 600ms forwards;
   overflow: hidden;
 }
 
