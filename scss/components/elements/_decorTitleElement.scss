@@ -3,9 +3,14 @@
   position: absolute;
   bottom: -10px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   height: 2px;
   background-color: var(--accent-color);
+
+  -webkit-animation: lineVisibilityUnderTitle 600ms
+    var(--transition-timing-function) 100ms forwards;
 
   animation: lineVisibilityUnderTitle 600ms var(--transition-timing-function)
     100ms forwards;

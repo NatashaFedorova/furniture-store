@@ -1,4 +1,17 @@
 .hero {
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(#d6cfc2),
+    color-stop(60%, rgba(255, 255, 255, 0.5)),
+    to(#d6cfc2)
+  );
+  background: -o-linear-gradient(
+    left,
+    #d6cfc2 0%,
+    rgba(255, 255, 255, 0.5) 60%,
+    #d6cfc2 100%
+  );
   background: linear-gradient(
     90deg,
     #d6cfc2 0%,
@@ -12,6 +25,8 @@
   position: absolute;
   top: 0;
   right: -34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1278px;
   height: 1080px;
@@ -19,19 +34,25 @@
 
 .hero__decorative-element-bg--lamp {
   width: 217px;
-  animation: visibilityDecorativeElementLamp 1000ms
+  -webkit-animation: visibilityDecorativeElementLamp 1000ms
+    var(--transition-timing-function) 1800ms forwards;
+          animation: visibilityDecorativeElementLamp 1000ms
     var(--transition-timing-function) 1800ms forwards;
 }
 
 .hero__decorative-element-bg--sofa {
   width: 852px;
-  animation: visibilityDecorativeElementSofa 1000ms
+  -webkit-animation: visibilityDecorativeElementSofa 1000ms
+    var(--transition-timing-function) 900ms forwards;
+          animation: visibilityDecorativeElementSofa 1000ms
     var(--transition-timing-function) 900ms forwards;
 }
 
 .hero__decorative-element-bg--plant {
   width: 209px;
-  animation: visibilityDecorativeElementPlant 1000ms
+  -webkit-animation: visibilityDecorativeElementPlant 1000ms
+    var(--transition-timing-function) 1400ms forwards;
+          animation: visibilityDecorativeElementPlant 1000ms
     var(--transition-timing-function) 1400ms forwards;
 }
 
@@ -40,7 +61,10 @@
   padding-top: 345px;
   padding-bottom: 228px;
 
-  animation: visibilityDecorBgHero 600ms var(--transition-timing-function) 600ms
+  -webkit-animation: visibilityDecorBgHero 600ms var(--transition-timing-function) 600ms
+    forwards;
+
+          animation: visibilityDecorBgHero 600ms var(--transition-timing-function) 600ms
     forwards;
 
   overflow: hidden;
@@ -68,7 +92,10 @@
     height: 4px;
     background-color: var(--accent-color);
 
-    animation: lineVisibilityUnderTitle 500ms var(--transition-timing-function)
+    -webkit-animation: lineVisibilityUnderTitle 500ms var(--transition-timing-function)
+      100ms forwards;
+
+            animation: lineVisibilityUnderTitle 500ms var(--transition-timing-function)
       100ms forwards;
   }
 }
@@ -89,10 +116,17 @@
   position: absolute;
   bottom: 49px;
   left: 441px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 42px;
   width: 135px;
   height: 130px;
@@ -115,6 +149,20 @@
 .hero_circle {
   width: 17px;
   height: 17px;
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(158, 149, 185, 0.1)),
+    color-stop(rgba(135, 146, 173, 0.1)),
+    color-stop(rgba(97, 106, 140, 0.1)),
+    to(rgba(83, 91, 128, 0.1))
+  );
+  background: -o-linear-gradient(
+    rgba(158, 149, 185, 0.1),
+    rgba(135, 146, 173, 0.1),
+    rgba(97, 106, 140, 0.1),
+    rgba(83, 91, 128, 0.1)
+  );
   background: linear-gradient(
     rgba(158, 149, 185, 0.1),
     rgba(135, 146, 173, 0.1),
@@ -130,7 +178,11 @@
   left: -232px;
   width: 342px;
   height: 65px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(94, 87, 73, 0.1)), to(rgba(159, 155, 137, 0.1)));
+  background: -o-linear-gradient(rgba(94, 87, 73, 0.1), rgba(159, 155, 137, 0.1));
   background: linear-gradient(rgba(94, 87, 73, 0.1), rgba(159, 155, 137, 0.1));
   border-radius: 30px;
 }
@@ -139,9 +191,13 @@
   position: absolute;
   top: 403px;
   left: -149px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   width: 273px;
   height: 18px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(94, 87, 73, 0.1)), to(rgba(159, 155, 137, 0.1)));
+  background: -o-linear-gradient(rgba(94, 87, 73, 0.1), rgba(159, 155, 137, 0.1));
   background: linear-gradient(rgba(94, 87, 73, 0.1), rgba(159, 155, 137, 0.1));
   border-radius: 9px;
 }
@@ -150,9 +206,21 @@
   position: absolute;
   right: 600px;
   bottom: 67px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   width: 148px;
   height: 26px;
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(136, 128, 113, 0.4)),
+    to(rgba(201, 198, 185, 0.4))
+  );
+  background: -o-linear-gradient(
+    rgba(136, 128, 113, 0.4),
+    rgba(201, 198, 185, 0.4)
+  );
   background: linear-gradient(
     rgba(136, 128, 113, 0.4),
     rgba(201, 198, 185, 0.4)
@@ -164,9 +232,13 @@
   position: absolute;
   right: 444px;
   bottom: 34px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   width: 225px;
   height: 43px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(94, 87, 73, 0.6)), to(rgba(159, 155, 137, 0.6)));
+  background: -o-linear-gradient(rgba(94, 87, 73, 0.6), rgba(159, 155, 137, 0.6));
   background: linear-gradient(rgba(94, 87, 73, 0.6), rgba(159, 155, 137, 0.6));
   border-radius: 22px;
 }
@@ -175,9 +247,13 @@
   position: absolute;
   right: 429px;
   bottom: 37px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   width: 394px;
   height: 75px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(94, 87, 73, 0.2)), to(rgba(159, 155, 137, 0.2)));
+  background: -o-linear-gradient(rgba(94, 87, 73, 0.2), rgba(159, 155, 137, 0.2));
   background: linear-gradient(rgba(94, 87, 73, 0.2), rgba(159, 155, 137, 0.2));
   border-radius: 37px;
 }

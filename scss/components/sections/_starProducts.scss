@@ -9,6 +9,8 @@
 .star-products__title {
   &.decor-title-element::after {
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 343px;
   }
@@ -23,8 +25,14 @@
 
 .star-products__filter {
   margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 133px;
 }
@@ -37,6 +45,8 @@
     position: absolute;
     top: 50%;
     right: -50%;
+    -webkit-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
     transform: translate(50%, -50%);
     width: 113px;
     height: 1px;
@@ -46,14 +56,24 @@
 
 .star-products__filter-btn {
   padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 130px;
   height: 130px;
   background-color: var(--bg-filter);
   border: 1px solid var(--border-filter-color);
   border-radius: 50%;
+
+  -webkit-transition: border-color 250ms var(--transition-timing-function);
+
+  -o-transition: border-color 250ms var(--transition-timing-function);
 
   transition: border-color 250ms var(--transition-timing-function);
 
@@ -64,13 +84,23 @@
 }
 
 .filter-btn-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100px;
   height: 100px;
   background-color: var(--dark-bg-with-transparency);
   border-radius: 50%;
+
+  -webkit-transition: background-color 250ms var(--transition-timing-function);
+
+  -o-transition: background-color 250ms var(--transition-timing-function);
 
   transition: background-color 250ms var(--transition-timing-function);
 
@@ -91,34 +121,53 @@
 }
 
 .star-products__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 39px;
 }
 
 .star-products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 22px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
 .star-products__item {
   padding: 36px 54px 36px 54px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   border: 2px dashed var(--main-color-with-transparency-secondary);
   border-radius: 200px 200px 20px 20px;
 
   &:hover,
   &:focus {
+    -webkit-box-shadow: 0px 15px 39px 0px var(--box-shadow);
     box-shadow: 0px 15px 39px 0px var(--box-shadow);
   }
 }
 
 .star-products__img-wrapper {
   margin: 0 auto 14px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 206px;
   height: 270px;
@@ -126,8 +175,14 @@
 
 .star-products__path-content-wrapper {
   margin-bottom: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -138,8 +193,14 @@
 }
 
 .star-products__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 20px;
   font-weight: 500;
@@ -150,14 +211,25 @@
 }
 
 .star-products__btn-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 47px;
   height: 47px;
   background-color: var(--accent-color);
   border-radius: 50%;
+  -webkit-box-shadow: 0px 4px 4px 0px var(--box-shadow-third);
   box-shadow: 0px 4px 4px 0px var(--box-shadow-third);
+
+  -webkit-transition: background-color 250ms var(--transition-timing-function);
+
+  -o-transition: background-color 250ms var(--transition-timing-function);
 
   transition: background-color 250ms var(--transition-timing-function);
 
@@ -169,6 +241,10 @@
 
 .star-products__btn-cart-icon {
   stroke: var(--main-color);
+
+  -webkit-transition: stroke 250ms var(--transition-timing-function);
+
+  -o-transition: stroke 250ms var(--transition-timing-function);
 
   transition: stroke 250ms var(--transition-timing-function);
 

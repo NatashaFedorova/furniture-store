@@ -1,4 +1,5 @@
-@keyframes changeColorLogo {
+
+@-webkit-keyframes changeColorLogo {
   0% {
     background: linear-gradient(
       45deg,
@@ -203,6 +204,409 @@
   }
 }
 
+@keyframes changeColorLogo {
+  0% {
+    background: -o-linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+  }
+  10% {
+    background: -o-linear-gradient(
+      45deg,
+      #34383d 0%,
+      #46494d 10%,
+      #697078 15%,
+      #b6bbc1 17%,
+      #697078 20%,
+      #46494d 25%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #34383d 0%,
+      #46494d 10%,
+      #697078 15%,
+      #b6bbc1 17%,
+      #697078 20%,
+      #46494d 25%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+  }
+  20% {
+    background: -o-linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #46494d 20%,
+      #697078 25%,
+      #b6bbc1 27%,
+      #697078 30%,
+      #46494d 35%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #46494d 20%,
+      #697078 25%,
+      #b6bbc1 27%,
+      #697078 30%,
+      #46494d 35%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+  }
+  30% {
+    background: -o-linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #46494d 30%,
+      #697078 35%,
+      #b6bbc1 37%,
+      #697078 40%,
+      #46494d 45%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #46494d 30%,
+      #697078 35%,
+      #b6bbc1 37%,
+      #697078 40%,
+      #46494d 45%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+  }
+  40% {
+    background: -o-linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #46494d 40%,
+      #697078 45%,
+      #b6bbc1 47%,
+      #697078 50%,
+      #46494d 55%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #46494d 40%,
+      #697078 45%,
+      #b6bbc1 47%,
+      #697078 50%,
+      #46494d 55%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+  }
+  50% {
+    background: -o-linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #46494d 50%,
+      #697078 55%,
+      #b6bbc1 57%,
+      #697078 60%,
+      #46494d 65%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #46494d 50%,
+      #697078 55%,
+      #b6bbc1 57%,
+      #697078 60%,
+      #46494d 65%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+  }
+  60% {
+    background: -o-linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #46494d 60%,
+      #697078 65%,
+      #b6bbc1 67%,
+      #697078 70%,
+      #46494d 75%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #46494d 60%,
+      #697078 65%,
+      #b6bbc1 67%,
+      #697078 70%,
+      #46494d 75%,
+      #34383d 80%,
+      #34383d 90%,
+      #34383d 100%
+    );
+  }
+  70% {
+    background: -o-linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #46494d 70%,
+      #697078 75%,
+      #b6bbc1 77%,
+      #697078 80%,
+      #46494d 85%,
+      #34383d 90%,
+      #34383d 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #46494d 70%,
+      #697078 75%,
+      #b6bbc1 77%,
+      #697078 80%,
+      #46494d 85%,
+      #34383d 90%,
+      #34383d 100%
+    );
+  }
+  80% {
+    background: -o-linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #46494d 80%,
+      #697078 85%,
+      #b6bbc1 87%,
+      #697078 90%,
+      #46494d 95%,
+      #34383d 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #46494d 80%,
+      #697078 85%,
+      #b6bbc1 87%,
+      #697078 90%,
+      #46494d 95%,
+      #34383d 100%
+    );
+  }
+  90% {
+    background: -o-linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #46494d 90%,
+      #697078 95%,
+      #b6bbc1 97%,
+      #697078 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #46494d 90%,
+      #697078 95%,
+      #b6bbc1 97%,
+      #697078 100%
+    );
+  }
+  100% {
+    background: -o-linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #55585c 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #34383d 0%,
+      #34383d 10%,
+      #34383d 20%,
+      #34383d 30%,
+      #34383d 40%,
+      #34383d 50%,
+      #34383d 60%,
+      #34383d 70%,
+      #34383d 80%,
+      #34383d 90%,
+      #55585c 100%
+    );
+  }
+}
+
+@-webkit-keyframes visibilityDecorBgHero {
+  0% {
+    background: url(../images/hero/img-hero-futniture-min.png),
+      url(../images/hero/img-bg-hero-1x-min.png);
+    background-repeat: no-repeat;
+    background-position: right -14px top 262px, right -300px center;
+    background-size: auto, contain;
+  }
+
+  100% {
+    background: url(../images/hero/img-hero-futniture-min.png),
+      url(../images/hero/img-bg-hero-1x-min.png);
+    background-repeat: no-repeat;
+    background-position: right 14px top 262px, right center;
+    background-size: auto, contain;
+  }
+}
+
 @keyframes visibilityDecorBgHero {
   0% {
     background: url(../images/hero/img-hero-futniture-min.png),
@@ -221,11 +625,12 @@
   }
 }
 
-@keyframes visibilityDecorativeElementLamp {
+@-webkit-keyframes visibilityDecorativeElementLamp {
   0% {
     background: url(../images/hero/lamp-min.png);
     background-repeat: no-repeat;
     background-size: contain;
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
 
@@ -233,6 +638,42 @@
     background: url(../images/hero/lamp-min.png);
     background-repeat: no-repeat;
     background-size: contain;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes visibilityDecorativeElementLamp {
+  0% {
+    background: url(../images/hero/lamp-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    background: url(../images/hero/lamp-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes visibilityDecorativeElementSofa {
+  from {
+    background: url(../images/hero/sofa-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transform: scale(1.2) translateX(27%);
+    transform: scale(1.2) translateX(27%);
+  }
+  to {
+    background: url(../images/hero/sofa-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
@@ -242,12 +683,32 @@
     background: url(../images/hero/sofa-min.png);
     background-repeat: no-repeat;
     background-size: contain;
+    -webkit-transform: scale(1.2) translateX(27%);
     transform: scale(1.2) translateX(27%);
   }
   to {
     background: url(../images/hero/sofa-min.png);
     background-repeat: no-repeat;
     background-size: contain;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes visibilityDecorativeElementPlant {
+  from {
+    background: url(../images/hero/plant-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transform: scale(0.8) translateX(-5%);
+    transform: scale(0.8) translateX(-5%);
+  }
+  to {
+    background: url(../images/hero/plant-min.png);
+    background-repeat: no-repeat;
+
+    background-size: contain;
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
@@ -257,6 +718,7 @@
     background: url(../images/hero/plant-min.png);
     background-repeat: no-repeat;
     background-size: contain;
+    -webkit-transform: scale(0.8) translateX(-5%);
     transform: scale(0.8) translateX(-5%);
   }
   to {
@@ -264,40 +726,89 @@
     background-repeat: no-repeat;
 
     background-size: contain;
+    -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+@-webkit-keyframes lineVisibilityUnderTitle {
+  from {
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(0.3);
+    transform: translateX(-50%) scale(0.3);
+  }
+  to {
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(1);
+    transform: translateX(-50%) scale(1);
   }
 }
 
 @keyframes lineVisibilityUnderTitle {
   from {
     left: 50%;
+    -webkit-transform: translateX(-50%) scale(0.3);
     transform: translateX(-50%) scale(0.3);
   }
   to {
     left: 50%;
+    -webkit-transform: translateX(-50%) scale(1);
     transform: translateX(-50%) scale(1);
+  }
+}
+
+@-webkit-keyframes lineVisibilityUnderTitleAboutUsSection {
+  from {
+    left: 0;
+    -webkit-transform: translateX(0) scale(0.3);
+    transform: translateX(0) scale(0.3);
+  }
+  to {
+    left: 0;
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
   }
 }
 
 @keyframes lineVisibilityUnderTitleAboutUsSection {
   from {
     left: 0;
+    -webkit-transform: translateX(0) scale(0.3);
     transform: translateX(0) scale(0.3);
   }
   to {
     left: 0;
+    -webkit-transform: translateX(0) scale(1);
     transform: translateX(0) scale(1);
+  }
+}
+
+@-webkit-keyframes ratingStars {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes ratingStars {
   0% {
+    -webkit-transform: scale(0);
     transform: scale(0);
   }
   50% {
+    -webkit-transform: scale(1.4);
     transform: scale(1.4);
   }
   100% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }

@@ -1,3 +1,4 @@
+
 .advantages__container {
   position: relative;
   padding-top: 460px;
@@ -11,7 +12,9 @@
   position: absolute;
   top: 80px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 956px;
   height: 415px;
   background: url(../images/sofa-min.png);
@@ -20,18 +23,30 @@
 }
 .advantages__list {
   padding: 121px 324px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 155px;
   background-color: var(--accent-bg-secondary);
   border-radius: 30px;
 }
 
 .advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
   color: var(--secondary-color);
 }

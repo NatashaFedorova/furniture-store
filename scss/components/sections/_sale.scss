@@ -10,6 +10,22 @@
   padding-top: 60px;
   width: 1520px;
   height: 767px;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.2)),
+      color-stop(0.01%, rgba(0, 0, 0, 0.05))
+    ),
+    url(../images/bg-img-sale-min.png),
+    lightgray 1.6px -106.427px / 100% 146.938% no-repeat;
+  background: -o-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.05) 0.01%
+    ),
+    url(../images/bg-img-sale-min.png),
+    lightgray 1.6px -106.427px / 100% 146.938% no-repeat;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.2) 0%,
@@ -28,8 +44,14 @@
 
 .sale__timer {
   margin-bottom: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 71px;
 }
@@ -39,9 +61,18 @@
 .sale__minutes,
 .sale__seconds {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
@@ -50,8 +81,14 @@
 
 .sale__timer-value {
   margin-bottom: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 66px;
   height: 66px;
@@ -64,6 +101,7 @@
   position: absolute;
   bottom: 11px;
   left: -20px;
+  -webkit-transform: rotateZ(270deg) rotateX(178deg);
   transform: rotateZ(270deg) rotateX(178deg);
 }
 

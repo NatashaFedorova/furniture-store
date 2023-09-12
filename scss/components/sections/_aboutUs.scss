@@ -1,3 +1,4 @@
+
 .about-us__container {
   padding: 80px 110px 80px 110px;
   background-image: url(../images/bg-decor-img-about-us.svg);
@@ -25,10 +26,15 @@
 .about-us__title {
   &.decor-title-element::after {
     left: 0;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
     width: 170px;
 
-    animation: lineVisibilityUnderTitleAboutUsSection 600ms
+    -webkit-animation: lineVisibilityUnderTitleAboutUsSection 600ms
+      var(--transition-timing-function) 100ms forwards;
+
+            animation: lineVisibilityUnderTitleAboutUsSection 600ms
       var(--transition-timing-function) 100ms forwards;
   }
 }
